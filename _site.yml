@@ -1,0 +1,17 @@
+name: "MySite"
+navbar:
+  title: "Laura Roldan-Gomez"
+  right:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "Research"
+      icon: fa-solid fa-paper-plane
+      href: Research.html   
+    - text: "CV"
+      icon: fa-solid fa-fingerprint
+      href: CV.html
+    - text: "Contact"
+      icon: fa-solid fa-pen-fancy
+      href: Contact.html
+output_dir: "docs"

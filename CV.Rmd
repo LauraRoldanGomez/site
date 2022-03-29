@@ -1,0 +1,93 @@
+---
+title: ""
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    collapsed: false
+    number_sections: false
+    toc_depth: 1
+    #code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
+```
+
+<div>
+
+<a href = "CV_files/CV_LRG.pdf">
+<button role="button">Download PDF</button>
+</a>
+
+</div>
+
+<br>
+
+# Education
+<hr>
+
+- PhD Candidate Advanced Quantitative Methods, Expected 2023, University of Exeter, United Kingdom
+
+- MRes. Advanced Quantitative Methods, 2020, University of Exeter, United Kingdom
+
+- MRes. Sustainable Futures, 2019, University of Bristol, United Kingdom
+
+- MSc. Environmental Management, 2014, Javeriana University, Colombia
+
+- BSc. Biology, 2007, Los Andes University, Colombia
+
+<br>
+
+# Publications
+<hr>
+L. Jasny, C. Prell, E. Schiffer, L. Roldan, M. Barnes, P. Matous, M. Hamilton, D. Jacobs, J. Sayles, A. Guerrero. Participant Engagement in Environmentally Focused Social Network Data Collection. Social Networks, 2021
+
+<br>
+
+Ungar, P., Osejo, A., Roldán, L., Buitrago, E. (2014). Caracterización del sistema social asociado al territorio. En: Sarmiento, C. y P. Ungar (Eds). Aportes a la delimitación del páramo mediante la identificación de los límites inferiores del ecosistema (pp. 54-68)., 2014
+
+<br>
+
+# Conference Presentations
+
+<hr>
+
+2021 &emsp; Forests in Conflict. European Conference of Social Networks, 
+
+2020 &emsp; Forests in Conflict. Sunbelt, 
+
+<br>
+
+# Teaching Experience
+
+<hr>
+
+- Introduction to Social Network Analysis with R and statnet, Jan 2022, Teaching Assistant, Heriot Watt University, UK
+
+- Introduction to Social Network Analysis, Jan-Mar 2021, Teaching Assistant, University of Exeter, UK
+
+- Data Analysis in Social Science I, Jan-Mar 2021, Teaching Assistant, University of Exeter, UK
+
+- Data Analysis in Social Science II, Sep-Dec 2020, Teaching Assistant, University of Exeter, UK
+
+- Institute of Coding Summer School - R and Python, Jun-Jul 2020, Teaching Assistant, University of Exeter, UK
+
+- Workshop on Social Networks, Sep 2019, Teaching Assistant, University of Exeter, UK 
+
+- NHS R Training Course, May 2019, Teaching Assistant, University of Exeter, UK
+
+<br>
+
+# Employment History
+
+<hr>
+
+- Contractor, 2017-18,Unit for Rural and Agricultural Planning, Colombia
+
+- Research Assistant, Mar-Nov 2014, Geography Dept, University of Exeter, UK
+
+- Researcher, 2011-14, Institute for Research on Biological Resources Alexander von Humboldt, Colombia
+
+- Contractor, 2007-10, National Natural Parks System, Colombia
+

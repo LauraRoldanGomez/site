@@ -1,0 +1,42 @@
+---
+title: "Laura Roldan-Gomez"
+output: html_document
+---
+
+<style type="text/css">
+.title {
+  display: none;
+}
+
+#getting-started img {
+  margin-right: 10px;
+}
+
+</style>
+
+<div class="row" style="padding-top: 30px;">
+<div class="col-sm-6">
+
+## **Laura Roldan-Gomez**
+
+PhD Candidate
+
+Q-Step Centre, University of Exeter
+
+<br>
+
+Welcome to my site.
+
+I am a second year PhD student in the [Q-Step Centre](http://socialsciences.exeter.ac.uk/q-step/) at the University of Exeter. I am looking at how armed conflict in Colombia corresponds to changes in deforestation using network analysis methods.
+ 
+My research interests include social-ecological systems and social network analysis.
+
+
+</div>
+<div class="col-sm-6">
+
+### 
+
+![](images/photo.jpg){width=80%}
+</a>
+</div>

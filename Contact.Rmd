@@ -1,0 +1,42 @@
+---
+title: ""
+output: html_document
+---
+
+<style type="text/css">
+.title {
+  display: none;
+}
+
+#getting-started img {
+  margin-left: 10px;
+}
+
+</style>
+
+<div class="row" style="padding-top: 100px;">
+<div class="col-sm-6">
+
+**Laura Roldan-Gomez**
+
+email: <lr480@exeter.ac.uk>
+
+Pronouns: She/Her
+
+AQM PhD Candidate
+
+Q-Step Centre
+
+University of Exeter
+
+Knightley, Streatham Drive, Exeter , EX4 4PD
+
+UK
+
+
+</div>
+<div class="col-sm-6">
+
+### 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.632197720393!2d-3.5361687139679847!3d50.73358489361508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486da44885fbf2fd%3A0x35ca3b99a9bc44a7!2sUniversity%20of%20Exeter%20Knightley%20Building!5e0!3m2!1sen!2suk!4v1647615565333!5m2!1sen!2suk" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+

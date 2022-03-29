@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Why do armed conflicts last so long?</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Laura Roldan-Gomez" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/rladies.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/rladies-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle, bg_karl
+# Why do armed conflicts last so long?
+### Laura Roldan-Gomez 
+### March, 2022
+
+&lt;style type="text/css"&gt;
+.bg_karl {
+  position: relative;
+  z-index: 1;
+}
+
+.bg_karl::before {    
+      content: "";
+      background-image: url(images/marquetalia-tirofijo.jpeg);
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+      z-index: -1;
+}
+&lt;/style&gt;
+
+---
+background-image: url(images/active_conflicts.png), url(images/fatalities.png) 
+background-size: 40%, 45%
+background-position: 95% 5%, 5% 125%
+# Why care about this question?
+
+There is no such thing as peace, just times where we are not in war... &lt;br&gt;
+
+Clausewitz
+
+- Utopic reason: What if we could change this? 
+
+- Humanitarian reason - Devastating 
+&lt;br&gt;
+
+- Developmental reason - Pervasive
+&lt;br&gt;
+
+- Logical reason - Winners?
+&lt;br&gt;
+
+- Practical reason - The longer the war, the harder it is to end
+
+---
+background-image: url(images/colombia.png), url(images/persistence.png) 
+background-size: 45%, 50%
+background-position: 95% 5%, 5% 90%
+
+# The Colombian Armed Conflict
+
+.pull-left[
+- Long-lasting civil conflict
+&lt;br&gt;
+
+- Mainly between the government and two guerrilla groups
+&lt;br&gt;
+
+- But actually, multiple actors: paramilitary, drug lords, common delinquents, sub-branches
+&lt;br&gt;
+
+- Many wars in one
+]
+
+---
+background-image: url(images/attacks_victims_co.jpeg), url(images/attacks.png)
+background-size: 60%, 30%
+background-position: 10% 75%, 95% 20%
+
+# Pervasive and tricky
+
+
+---
+background-image: url(images/peaceattempts.png)
+background-size: 60%
+background-position: 50% 75%
+
+# And resistant
+
+---
+background-image: url(images/complexity.png)
+background-size: 50%
+background-position: 95% 75%
+
+# Approach to this question
+
+.pull-left[
+- Conflicts are increasingly complex and full of uncertainty
+&lt;br&gt;
+
+- All conflicts end up being different due to contextual features
+
+- What they all have in common = attacks
+&lt;br&gt;
+
+- Attacks are interdependent, so...
+
+- Linear models are not fit for this analysis
+&lt;br&gt;
+
+so...
+
+- We need methods that can deal with interdependence.
+]
+
+---
+background-image: url(images/network.png), url(images/sequence.gif)
+background-size: 40%, 40%
+background-position: 10% 70%, 85% 70%
+
+# What I propose
+
+**Any conflict is essentially the aggregation of attacks that produce a certain amount of fatalities in one year**
+
+.pull-left[
+That would look like this:
+]
+
+.pull-right[
+If we unravel that messy network, we would get a sequence of attacks like this:
+]
+
+---
+# Relational Event Model
+
+Once we have a sequence of events, we can use relational event models to try and identify patterns within this aggregate of micro-dynamics
+
+
+.pull-left[
+## Inertia: 
+armed groups tend to continue to attack those they attacked the most in the past.
+&lt;br&gt;&lt;br&gt;
+
+&lt;img src="images/inertiapast.png" width="80%" /&gt;&lt;img src="images/inertiafuture.png" width="80%" /&gt;
+]
+
+.pull-right[
+## Reciprocity: 
+armed groups tend to attack those armed groups that attacked them the most in the past.
+&lt;br&gt;&lt;br&gt;
+
+&lt;img src="images/retaliationpast.png" width="80%" /&gt;&lt;img src="images/retaliationfuture.png" width="80%" /&gt;
+
+]
+
+---
+# Hypotheses
+
+The micro-dynamics of attacks play an important role in the duration of a civil war. By looking at this basic unit, we can understand the mechanisms that drive the emergence of these interactions, what motivates an actor to attack, and what happens after an attack.
+&lt;br&gt;&lt;br&gt;
+
+&lt;table border="0" bordercolor="black" align="center"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Hypothesis&lt;/th&gt;
+        &lt;th&gt;Parameter&lt;/th&gt;
+        &lt;th&gt;Interpretation&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;H&lt;sub&gt;1&lt;/sub&gt;:&lt;/td&gt;
+        &lt;td&gt;Inertia&lt;/th&gt;
+        &lt;td&gt;Armed groups will tend to attack those armed groups they have attacked the most in the past&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;H&lt;sub&gt;2&lt;/sub&gt;:&lt;/td&gt;
+        &lt;td&gt;Recency on inertia&lt;/th&gt;
+        &lt;td&gt;Armed groups will tend to attack with higher frequency those groups they have recently attacked&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;H&lt;sub&gt;3&lt;/sub&gt;:&lt;/td&gt;
+        &lt;td&gt;Reciprocity&lt;/th&gt;
+        &lt;td&gt;Armed groups will tend to attack those armed groups that attacked them the most in the past&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;H&lt;sub&gt;4&lt;/sub&gt;:&lt;/td&gt;
+        &lt;td&gt;Recency on reciprocity&lt;/th&gt;
+        &lt;td&gt;armed groups will tend to reciprocate attacks from those armed groups that recently targeted them&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+
+---
+background-image: url(images/data.png), url(images/r_logo.png)
+background-size: 50%, 15%
+background-position: 30% 70%, 90% 20%
+
+# Data &amp; Software
+
+---
+# Findings Overview
+
+&lt;br&gt;
+
+&lt;table border="0" bordercolor="black" align="center"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Hypothesis&lt;/th&gt;
+        &lt;th&gt;Parameter&lt;/th&gt;
+        &lt;th&gt;Supported&lt;/th&gt;
+        &lt;th&gt;Interpretation&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;H&lt;sub&gt;1&lt;/sub&gt;:&lt;/th&gt;
+        &lt;td&gt;Inertia&lt;/th&gt;
+        &lt;td&gt;Yes: + and significant&lt;/th&gt;
+        &lt;td&gt;The more an armed group has attacked another group in the past, the more likely they are to do so in the future.&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;H&lt;sub&gt;2&lt;/sub&gt;:&lt;/th&gt;
+        &lt;td&gt;Recency on inertia&lt;/th&gt;
+        &lt;td&gt;Yes: + and significant. &lt;/th&gt;
+        &lt;td&gt;Armed groups tend to attack those groups they have recently attacked.&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;H&lt;sub&gt;3&lt;/sub&gt;:&lt;/th&gt;
+        &lt;td&gt;Reciprocity&lt;/th&gt;
+        &lt;td&gt;No: - and mostly significant&lt;/th&gt;
+        &lt;td&gt;Armed groups do not tend to reciprocate attacks directed at them (Amazon, Andes and Pacific).&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;H&lt;sub&gt;4&lt;/sub&gt;:&lt;/th&gt;
+        &lt;td&gt;Recency on reciprocity&lt;/th&gt;
+        &lt;td&gt;Yes: + and significant (lower than H&lt;sub&gt;3&lt;/sub&gt;)&lt;/th&gt;
+        &lt;td&gt;Armed groups tend to reciprocate recent attacks.&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;H&lt;sub&gt;5&lt;/sub&gt;:&lt;/th&gt;
+        &lt;td&gt;Inertia PShift&lt;/th&gt;
+        &lt;td&gt;Yes&lt;/th&gt;
+        &lt;td&gt;Armed groups tend to hold onto their roles as attackers.
+        &lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;H&lt;sub&gt;6&lt;/sub&gt;:&lt;/th&gt;
+        &lt;td&gt;Reciprocity PShift&lt;/th&gt;
+        &lt;td&gt;No&lt;/th&gt;
+        &lt;td&gt;Armed groups tend to avoid reciprocating attacks.&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+---
+class: left, top
+
+# Conclusions and a Note on Limitations
+
+--
+
+- **In the long run, the conflict in Colombia seems to be driven by a strategy of attack rather than by one of defense.**
+&lt;br&gt;
+
+--
+
+- **However, recent events seem to tell a different story. Both mechanisms, inertia and reciprocity are at play when the recency factor is taken into consideration**
+&lt;br&gt;
+
+--
+
+- **The data has an important limitation: the direction of the attacks is not known for attacks between paramilitary groups and rebel groups**
+&lt;br&gt;
+
+-- **I tackled this issue by using a data imputation process using a Bernoulli distribution.**
+
+---
+class: center, middle, bg_karl
+# The End
+
+---
+# Illustration references
+
+Cover: https://andeancommunity.wordpress.com/seminar-3/
+
+Conflict 2019: Raul Arboleda/AFP
+
+Complexity: https://creativeconflictwisdom.files.wordpress.com/2010/06/picture1-powerpoint1.jpg
+
+---
+background-image: url(images/coefficients.png)
+background-size: 80%
+background-position: 50% 50%
+
+# Table of Coefficients
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
