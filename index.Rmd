@@ -32,6 +32,11 @@ I am a second year PhD student in the [Q-Step Centre](http://socialsciences.exet
 My research interests include social-ecological systems and social network analysis.
 
 
+<a href = "https://www.instagram.com/laroldangomez/?hl=en">
+![](images/instagram.svg){width=21px}&nbsp;&nbsp;&nbsp;
+<a href = "https://www.linkedin.com/feed/">
+![](images/linkedin.svg){width=21px}
+
 </div>
 <div class="col-sm-6">
 
@@ -40,3 +45,6 @@ My research interests include social-ecological systems and social network analy
 ![](images/photo_cairns.jpg){width=80%}
 </a>
 </div>
+
+
+
