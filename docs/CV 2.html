@@ -11,7 +11,7 @@
 
 
 
-<title>Research.knit</title>
+<title>CV.knit</title>
 
 <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -224,6 +227,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -231,6 +297,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -291,34 +367,90 @@ $(document).ready(function () {
 </div>
 
 
-<div id="working-papers" class="section level2">
-<h2>Working papers</h2>
-<hr>
-<p>Why do armed conflicts last so long? The effect of relational
-mechanisms on the duration of the Colombian armed conflict</p>
-<p><a href = "research_files/ppt_paper_REM/presentation_SPASP_2022.html"><button role="button">Presentation</button>
-</a> <br></p>
+<div>
+<p><a href = "CV_files/CV_LRG.pdf"> <button role="button">Download
+PDF</button> </a></p>
 </div>
-<div id="publications" class="section level2">
-<h2>Publications</h2>
+<p><br></p>
+<div id="education" class="section level1">
+<h1>Education</h1>
+<hr>
+<ul>
+<li><p>PhD Candidate Advanced Quantitative Methods, Expected 2023,
+University of Exeter, United Kingdom</p></li>
+<li><p>MRes. Advanced Quantitative Methods, 2020, University of Exeter,
+United Kingdom</p></li>
+<li><p>MRes. Sustainable Futures, 2019, University of Bristol, United
+Kingdom</p></li>
+<li><p>MSc. Environmental Management, 2014, Javeriana University,
+Colombia</p></li>
+<li><p>BSc. Biology, 2007, Los Andes University, Colombia</p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="publications" class="section level1">
+<h1>Publications</h1>
 <hr>
 <p>L. Jasny, C. Prell, E. Schiffer, L. Roldan, M. Barnes, P. Matous, M.
 Hamilton, D. Jacobs, J. Sayles, A. Guerrero. Participant Engagement in
 Environmentally Focused Social Network Data Collection. Social Networks,
 2021</p>
-<p><a href="https://doi.org/10.1016/j.socnet.2021.01.005">Link</a></p>
 <p><br></p>
 <p>Ungar, P., Osejo, A., Roldán, L., Buitrago, E. (2014).
 Caracterización del sistema social asociado al territorio. En:
 Sarmiento, C. y P. Ungar (Eds). Aportes a la delimitación del páramo
 mediante la identificación de los límites inferiores del ecosistema
 (pp. 54-68)., 2014</p>
-<p><a
-href="http://repository.humboldt.org.co/handle/20.500.11761/32539">Link</a></p>
+<p><br></p>
+</div>
+<div id="conference-presentations" class="section level1">
+<h1>Conference Presentations</h1>
+<hr>
+<p>2021   Forests in Conflict. European Conference of Social
+Networks,</p>
+<p>2020   Forests in Conflict. Sunbelt,</p>
+<p><br></p>
+</div>
+<div id="teaching-experience" class="section level1">
+<h1>Teaching Experience</h1>
+<hr>
+<ul>
+<li><p>Introduction to Social Network Analysis with R and statnet, Jan
+2022, Teaching Assistant, Heriot Watt University, UK</p></li>
+<li><p>Introduction to Social Network Analysis, Jan-Mar 2021, Teaching
+Assistant, University of Exeter, UK</p></li>
+<li><p>Data Analysis in Social Science I, Jan-Mar 2021, Teaching
+Assistant, University of Exeter, UK</p></li>
+<li><p>Data Analysis in Social Science II, Sep-Dec 2020, Teaching
+Assistant, University of Exeter, UK</p></li>
+<li><p>Institute of Coding Summer School - R and Python, Jun-Jul 2020,
+Teaching Assistant, University of Exeter, UK</p></li>
+<li><p>Workshop on Social Networks, Sep 2019, Teaching Assistant,
+University of Exeter, UK</p></li>
+<li><p>NHS R Training Course, May 2019, Teaching Assistant, University
+of Exeter, UK</p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="employment-history" class="section level1">
+<h1>Employment History</h1>
+<hr>
+<ul>
+<li><p>Contractor, 2017-18,Unit for Rural and Agricultural Planning,
+Colombia</p></li>
+<li><p>Research Assistant, Mar-Nov 2014, Geography Dept, University of
+Exeter, UK</p></li>
+<li><p>Researcher, 2011-14, Institute for Research on Biological
+Resources Alexander von Humboldt, Colombia</p></li>
+<li><p>Contractor, 2007-10, National Natural Parks System,
+Colombia</p></li>
+</ul>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -351,6 +483,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
