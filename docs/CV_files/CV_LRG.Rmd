@@ -51,6 +51,9 @@ tribble(
 library(tibble)
 tribble(
   ~ Conference, ~ When,
+  "ECPR - General Conference", "2022",
+  "Sunbelt", "2022",
+  "PolNet", "2022",
   "European Conference of Social Networks", "2021",
   "Sunbelt", "2020"
 ) %>% 
@@ -62,6 +65,8 @@ tribble(
 library(tibble)
 tribble(
   ~ Role, ~ When, ~ Institution, ~ Where,
+  "Co-lead Statistical Modelling in R", "2022", "University of Exeter","United Kingdom",
+  "Co-lead Introduction to R", "2022", "University of Exeter","United Kingdom",
   "Introduction to Social Network Analysis with R and statnet
 ", "Jan 2022", "Teaching Assistant, Heriot Watt University", "United Kingdom",
   "Introduction to Social Network Analysis", "Jan-Mar 2021", "Teaching Assistant, University of Exeter", "United Kingdom",
@@ -70,7 +75,21 @@ tribble(
   "Institute of Coding Summer School - R and Python", "Jun-Jul 2020", "", "", 
   "Workshop on Social Networks", "Sep 2019", "", "",
   "NHS R Training Course", "May 2019", "", "",
-  "NHS R Training Course", "May 2019", "", "",
+) %>% 
+  detailed_entries(Role, When, Institution, Where)
+```
+
+# Workshops
+```{r}
+library(tibble)
+tribble(
+  ~ Role, ~ When, ~ Institution, ~ Where,
+  "Relational Spatial Analysis", "2022", "Technische Universität Berlin","Germany",
+  "Relational Event Models", "2022", "Carter Butts at Sunbelt","Australia",
+  "Social-Ecological Network Analysis", "2022", "Centre for Complex Systems Studies, Utrecht University","Netherlands",
+  "Learning from Geoenvironmental Data: Tools for a Changing Planet", "2022", "Venice International University","Italy",
+  "Advanced Social Network Techniques", "2021", "NUSC Summer School in Network and Data Science ","Online",
+  "Introduction to Social and Ecological Network Analysis", "2019", "University of Maryland - SESYNC","USA",
 ) %>% 
   detailed_entries(Role, When, Institution, Where)
 ```

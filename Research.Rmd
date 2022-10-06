@@ -11,6 +11,8 @@ knitr::opts_chunk$set(echo = TRUE)
 <hr>
 Why do armed conflicts last so long? The effect of relational mechanisms on the duration of the Colombian armed conflict 
 
+<a href = "ppt_paper_REM/presentation_SPASP_2022.html"><button role="button">Presentation</button>
+</a>
 <br>
 
 ## Publications
