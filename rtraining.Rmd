@@ -1,0 +1,14 @@
+---
+title: " "
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Coding for reproducible research
+<a href = "research_files/r_training_session_2/presentation_session_2.html">
+<button role="button">Go to</button>
+</a>
+
