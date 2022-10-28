@@ -7,7 +7,10 @@ navbar:
       href: index.html
     - text: "Research"
       icon: fa-solid fa-paper-plane
-      href: Research.html   
+      href: Research.html 
+    - text: "R-Training"
+      icon: fa-solid fa-robot
+      href: rtraining.html      
     - text: "CV"
       icon: fa-solid fa-fingerprint
       href: CV.html
