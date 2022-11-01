@@ -10,7 +10,6 @@
   <meta name="generator" content="quarto-1.0.36">
 
   <meta name="author" content="Laura Roldan-Gomez">
-  <meta name="dcterms.date" content="2022-10-27">
   <title>Data Types and Structures</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -388,7 +387,7 @@
   <h1 class="title">Data Types and Structures</h1>
   <p class="subtitle">Coding for Reproducible Research</p>
   <p class="author">Laura Roldan-Gomez</p>
-  <p class="date">10/27/22</p>
+  <p class="date">11/1/22</p>
 </section>
 
 <section id="we-are" class="title-slide slide level1 center">
@@ -397,6 +396,7 @@
 <p>Emma Walker</p>
 <p><br></p>
 <p>Xinran Du</p>
+<p>xd247@exeter.ac.uk</p>
 <p><br></p>
 <p>Laura Roldan-Gomez</p>
 <p>lr480@exeter.ac.uk</p>
@@ -418,10 +418,7 @@
 <li class="fragment"><p>This material is new and designed by Theresa Walker alongside a team of people including Emma and myself.</p></li>
 <li class="fragment"><p>It is based on other materials and our experience.</p></li>
 <li class="fragment"><p>I have taught R before, on multiple occasions.</p></li>
-</ul>
-<p><br></p>
-<ul>
-<li class="fragment">So today will be an experiment but should run smoothly.</li>
+<li class="fragment"><p>So today will be an experiment but should run smoothly.</p></li>
 </ul>
 <p>Check out the material <a href="https://uniexeterrse.github.io/intro-to-r/resources.html">here</a></p>
 </div>
@@ -442,6 +439,7 @@
 <li><p>Method of delivery: three parts with tasks and breaks every hour or so</p></li>
 <li><p>Please sign in/register your attendance, via an online sheet <a href="https://docs.google.com/spreadsheets/d/1ox_gFXCiRw_gznYxdA-cfI15fpgr5WS_FCR1yBqmVfg/edit#gid=0">link</a></p></li>
 </ul>
+<p><img data-src="images/today.png" class="absolute" style="bottom: 300px; right: 5px; width: 20%; "></p>
 </section>
 
 <section>
@@ -477,6 +475,7 @@
 <li>Character or strings</li>
 <li>Logical</li>
 </ul>
+<p><img data-src="images/datatypes.png" class="absolute" style="bottom: 150px; right: 100px; width: 10%; "></p>
 </section>
 <section id="numeric" class="slide level2">
 <h2>2.1. Numeric</h2>
@@ -527,6 +526,7 @@
 <pre><code>[1] "complex"</code></pre>
 </div>
 </div>
+<p><img data-src="images/numeric.png" class="absolute" style="top: 15px; right: 5px; width: 10%; "></p>
 </section>
 <section id="characters-or-strings" class="slide level2">
 <h2>2.2. Characters or strings:</h2>
@@ -557,6 +557,7 @@
 <pre><code>[1] "character"</code></pre>
 </div>
 </div>
+<p><img data-src="images/string.png" class="absolute" style="top: 15px; right: 5px; width: 10%; "></p>
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
@@ -600,7 +601,8 @@
 </section>
 <section id="logical" class="slide level2">
 <h2>2.3. Logical:</h2>
-<p>Logical values can either be TRUE or FALSE or sometimes 1 and 0.</p>
+<p>Logical values can either be TRUE or FALSE</p>
+<p>or sometimes 1 and 0.</p>
 <p><br></p>
 <p>That means that if you type:</p>
 <div class="cell">
@@ -619,6 +621,7 @@
 <pre><code>[1] "double"</code></pre>
 </div>
 </div>
+<p><img data-src="images/logical.png" class="absolute" style="top: 10px; right: 5px; width: 10%; "></p>
 </section>
 <section id="data-structures" class="slide level2">
 <h2>3. Data Structures</h2>
@@ -676,12 +679,21 @@
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1"></a>v_log <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">TRUE</span>) <span class="co"># a logical vector</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="concatenate-indexing-and-coercion" class="slide level2">
-<h2>CONCATENATE, INDEXING AND COERCION</h2>
+<section id="section-1" class="slide level2" data-background="#F9E79F">
+<h2></h2>
+<p><strong>CONCATENATE,</strong></p>
 <p><br></p>
-<p><em>Concatenate</em> The concatenate or combine c() function will construct a vector. We used it above to construct the logical vector.</p>
+<p><strong>INDEXING</strong></p>
 <p><br></p>
-<p>The function c() can also be used to add elements to a vector.</p>
+<p>AND</p>
+<p><br></p>
+<p><strong>COERCION</strong></p>
+</section>
+<section id="concatenate" class="slide level2">
+<h2>Concatenate</h2>
+<p>or combine c() function constructs a vector. We used it above to construct the logical vector.</p>
+<p><br></p>
+<p><strong>c()</strong> can also be used to add elements to a vector.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1"></a>v_name <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Sarah"</span>, <span class="st">"Tracy"</span>, <span class="st">"Jon"</span>)</span>
 <span id="cb47-2"><a href="#cb47-2"></a>v_name</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -706,8 +718,8 @@
 </div>
 </div>
 </section>
-<section id="lets-put-it-together" class="slide level2">
-<h2>Let’s put it together</h2>
+<section id="lets-use-it" class="slide level2">
+<h2>Let’s use it</h2>
 <p><br></p>
 <p>Let’s put this together and create our first little data set. We’ll work with data sets further down but I want to wrap up this section with one of the functions of vectors.</p>
 <p><br></p>
@@ -888,7 +900,7 @@
 <p>When you use real data, you must check this before running any analysis. And you need to coerce the data to whatever makes sense.</p>
 </section></section>
 <section>
-<section id="section-1" class="title-slide slide level1 center">
+<section id="section-2" class="title-slide slide level1 center">
 <h1></h1>
 <p>For instance, we must coerce our variables x, y, y_times_two to numeric and variable v_log to logic</p>
 <p><br></p>
@@ -917,11 +929,13 @@
 <section id="b.-lists" class="slide level2">
 <h2>b. lists:</h2>
 <p><br></p>
-<p>Lists are still vectors but can contain several datatypes (can be <em>heterogenous</em>) and each atom of the list can itself be composed of more than one atom (has a length &gt; one).</p>
+<p>…still vectors but can contain several datatypes (can be <em>heterogenous</em>)</p>
+<p>…each atom of the list can itself be composed of more than one atom (has a length &gt; one).</p>
 <p><br></p>
-<p>Atomic vectors are very constrained: atoms are of a scalar/length 1 and need to be one data type. You might find yourself needing a vector that violates these constraints and that can have length greater than 1 and not be of the same type.</p>
+<p>Atomic vectors are very constrained (atoms are of a scalar/length 1 and need to be one data type).</p>
+<p>You might need a vector that violates these constraints - can have length &gt; 1 and not be of the same type.</p>
 </section>
-<section id="section-2" class="slide level2">
+<section id="section-3" class="slide level2">
 <h2></h2>
 <p>We construct a list explicitly with list() but, like atomic vectors, most lists are created some other way in real life.</p>
 <p><br></p>
@@ -980,7 +994,7 @@ function(x) x^2</code></pre>
 <p><br></p>
 <p>There are 3 ways to index a list and the differences are very important:</p>
 </section>
-<section id="section-3" class="slide level2">
+<section id="section-4" class="slide level2">
 <h2></h2>
 <p>1.) With single square brackets, just like we indexed atomic vectors. Note this always returns a list, even if we request a single component.</p>
 <p><br></p>
@@ -1013,7 +1027,7 @@ $double
 </div>
 </div>
 </section>
-<section id="section-4" class="slide level2">
+<section id="section-5" class="slide level2">
 <h2></h2>
 <p>2.) With double square brackets. This can only be used to access a single component and it returns the “naked” component. You can request a component with a positive integer or by name.</p>
 <p><br></p>
@@ -1032,7 +1046,7 @@ $double
 </div>
 </div>
 </section>
-<section id="section-5" class="slide level2">
+<section id="section-6" class="slide level2">
 <h2></h2>
 <p>3.) With the $ addressing named components. Like [[, this can only be used to access a single component, but it is even more limited: You must specify the component by name.</p>
 <p><br></p>
@@ -1058,10 +1072,6 @@ $double
 <span id="cb109-5"><a href="#cb109-5"></a>} </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="section-6" class="slide level2">
-<h2></h2>
-<p>A very good and easy-to-grasp explanation of the difference between the list-preserving indexing provided by [ and the behaviour of [[ is given here: the pepper shaker analogy on R for Data Science(https://r4ds.had.co.nz/vectors.html#lists-of-condiments).</p>
-</section>
 <section id="tasks-and-break---10-minutes" class="slide level2" data-background="#F8C471">
 <h2>Tasks and break - 10 minutes</h2>
 <ol type="1">
@@ -1079,19 +1089,17 @@ $double
 <h2>4. Data frames</h2>
 <p>Data frames are the data structure you will use the most for statistics or data management in general.</p>
 <p><br></p>
-<p>4.1. Get your data:</p>
+</section>
+<section id="get-your-data" class="slide level2">
+<h2><strong>Get your data:</strong></h2>
 <p>To get your data in R, you can do one of three things:</p>
 <ul>
-<li>Create your own data set (we did that already with ‘ourdata’)</li>
-</ul>
-<p><br></p>
-<ul>
-<li>Use a built-in data set like iris</li>
+<li><p>Create your own data set (we did that already with ‘ourdata’)</p></li>
+<li><p>Use a built-in data set like iris</p></li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb111"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb111-1"><a href="#cb111-1"></a><span class="fu">data</span>(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><br></p>
 <ul>
 <li>Load your own data. There are multiple ways to load your data, for example using the command read.csv:</li>
 </ul>
@@ -1100,7 +1108,7 @@ $double
 </div>
 </section>
 <section id="create-a-data-frame" class="slide level2">
-<h2>4.1 Create a data frame:</h2>
+<h2>Create a data frame:</h2>
 <p><br></p>
 <p>First, let’s create a data frame by hand using the command data.frame (previously, we used a different method):</p>
 <div class="cell">
@@ -1122,7 +1130,7 @@ $double
 </div>
 </section>
 <section id="explore-a-data-frame" class="slide level2">
-<h2>4.2. Explore a data frame:</h2>
+<h2>Explore a data frame:</h2>
 <p>Second, let’s use several commands to explore a data frame:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb115"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb115-1"><a href="#cb115-1"></a><span class="fu">head</span>(dat) <span class="co"># shows first 6 rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1210,7 +1218,7 @@ $double
 </div>
 </section>
 <section id="indexingslicing" class="slide level2">
-<h2>4.3. Indexing/slicing</h2>
+<h2>Indexing/slicing</h2>
 <p><br></p>
 <p>As shown above, there are ways to retrieve specific elements from the data frame, the data frame can be <em>sliced</em> or <em>indexed</em> .</p>
 <p><br></p>
@@ -1222,31 +1230,32 @@ $double
 </div>
 </div>
 </section>
-<section id="section-9" class="slide level2">
-<h2></h2>
-<p>As data frames are also lists, it is possible to refer to columns (which are elements of such list) using the list notation, i.e.&nbsp;either double square brackets or a $.</p>
+<section id="data-frames-are-also-lists" class="slide level2">
+<h2>Data frames are also lists</h2>
+<p>…so, it is possible to refer to columns (which are elements of such list) using the list notation, i.e.&nbsp;either double square brackets or a $.</p>
+<p><br></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb139"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb139-1"><a href="#cb139-1"></a>dat[[<span class="st">"y"</span>]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1] 11 12 13 14 15 16 17 18 19 20</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb141"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb141-1"><a href="#cb141-1"></a>dat<span class="sc">$</span>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code> [1] 11 12 13 14 15 16 17 18 19 20</code></pre>
 </div>
 </div>
 </section>
 <section id="restructure-your-data-frame---pimp-up-your-data-frame" class="slide level2">
-<h2>4.4. Restructure your data frame - <em>pimp up your data frame</em></h2>
-<ol type="a">
-<li>Add and change names:</li>
-</ol>
+<h2>Restructure your data frame - <em>pimp up your data frame</em></h2>
+<p><br> - Add and change names:</p>
 <p>When you look at both the dat and iris data frames from earlier, they have no rownames</p>
 </section>
-<section id="section-10" class="slide level2">
+<section id="section-9" class="slide level2">
 <h2></h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb143"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb143-1"><a href="#cb143-1"></a>dat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb142"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb142-1"><a href="#cb142-1"></a>dat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   id  x  y
 1   a  1 11
@@ -1263,7 +1272,7 @@ $double
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb145"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb145-1"><a href="#cb145-1"></a><span class="fu">head</span>(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb144"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb144-1"><a href="#cb144-1"></a><span class="fu">head</span>(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  Sepal.Length Sepal.Width Petal.Length Petal.Width Species
 1          5.1         3.5          1.4         0.2  setosa
@@ -1275,11 +1284,11 @@ $double
 </div>
 </div>
 </section>
-<section id="section-11" class="slide level2">
+<section id="section-10" class="slide level2">
 <h2></h2>
 <p>However, when we look at the mtcars data set, it does</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb147"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb147-1"><a href="#cb147-1"></a><span class="fu">head</span>(mtcars) <span class="co"># *mtcars has rownames!*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb146"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb146-1"><a href="#cb146-1"></a><span class="fu">head</span>(mtcars) <span class="co"># *mtcars has rownames!*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                   mpg cyl disp  hp drat    wt  qsec vs am gear carb
 Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
@@ -1290,29 +1299,27 @@ Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
 Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre>
 </div>
 </div>
-<p><br></p>
-<p>Let’s assume we want to make dat a bit more fancy and we want to give each row a name. What could we do?</p>
 </section>
-<section id="section-12" class="slide level2">
-<h2></h2>
-<p>Albeit a bit non-sensical (but the entire data frame is just a generic example), we could name the rows as follows:</p>
+<section id="go-fancy" class="slide level2">
+<h2>Go fancy</h2>
+<p>To give give each row a name, we can… Albeit a bit non-sensical but the entire data frame is just a generic example…</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb149"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb149-1"><a href="#cb149-1"></a>names<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"first"</span>,<span class="st">"second"</span>,<span class="st">"third"</span>,<span class="st">"fourth"</span>,<span class="st">"fifth"</span>,<span class="st">"sixth"</span>, <span class="st">"seventh"</span>,<span class="st">"eighth"</span>,<span class="st">"ninth"</span>,<span class="st">"tenth"</span>) <span class="co"># we create a vector</span></span>
-<span id="cb149-2"><a href="#cb149-2"></a>names</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb148"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb148-1"><a href="#cb148-1"></a>names<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"first"</span>,<span class="st">"second"</span>,<span class="st">"third"</span>,<span class="st">"fourth"</span>,<span class="st">"fifth"</span>,<span class="st">"sixth"</span>, <span class="st">"seventh"</span>,<span class="st">"eighth"</span>,<span class="st">"ninth"</span>,<span class="st">"tenth"</span>) <span class="co"># we create a vector</span></span>
+<span id="cb148-2"><a href="#cb148-2"></a>names</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1] "first"   "second"  "third"   "fourth"  "fifth"   "sixth"   "seventh"
  [8] "eighth"  "ninth"   "tenth"  </code></pre>
 </div>
 </div>
 </section>
-<section id="section-13" class="slide level2">
+<section id="section-11" class="slide level2">
 <h2></h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb151"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb151-1"><a href="#cb151-1"></a><span class="fu">rownames</span>(dat)<span class="ot">=</span>names <span class="co"># we assign the vectors as rownames for dat</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb150"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb150-1"><a href="#cb150-1"></a><span class="fu">rownames</span>(dat)<span class="ot">=</span>names <span class="co"># we assign the vectors as rownames for dat</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb152"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb152-1"><a href="#cb152-1"></a>dat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb151"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb151-1"><a href="#cb151-1"></a>dat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>        id  x  y
 first    a  1 11
@@ -1328,14 +1335,14 @@ tenth    j 10 20</code></pre>
 </div>
 </div>
 </section>
-<section id="section-14" class="slide level2">
+<section id="section-12" class="slide level2">
 <h2></h2>
 <p>We can also rename columns. Let’s assume we want to change the abbreviation of the first three columns of mtcars to the actual words:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb154"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb154-1"><a href="#cb154-1"></a><span class="fu">colnames</span>(mtcars)[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"miles per gallon"</span>,<span class="st">"cylinders"</span>,<span class="st">"displacement"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb153"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb153-1"><a href="#cb153-1"></a><span class="fu">colnames</span>(mtcars)[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="st">"miles per gallon"</span>,<span class="st">"cylinders"</span>,<span class="st">"displacement"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb155"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb155-1"><a href="#cb155-1"></a><span class="fu">head</span>(mtcars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb154"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb154-1"><a href="#cb154-1"></a><span class="fu">head</span>(mtcars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                  miles per gallon cylinders displacement  hp drat    wt  qsec
 Mazda RX4                     21.0         6          160 110 3.90 2.620 16.46
@@ -1354,7 +1361,7 @@ Valiant            1  0    3    1</code></pre>
 </div>
 </div>
 </section>
-<section id="section-15" class="slide level2">
+<section id="section-13" class="slide level2">
 <h2></h2>
 <p>By using [1:3] we only changed a subset of the column names. If you want to change them all, the vector with the column names must correspond to the number of columns.</p>
 </section>
@@ -1365,7 +1372,7 @@ Valiant            1  0    3    1</code></pre>
 <li>find out how many rows our mtcars actually has:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb157"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb157-1"><a href="#cb157-1"></a><span class="fu">nrow</span>(mtcars) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb156"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb156-1"><a href="#cb156-1"></a><span class="fu">nrow</span>(mtcars) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 32</code></pre>
 </div>
@@ -1375,17 +1382,17 @@ Valiant            1  0    3    1</code></pre>
 <li>generate new column</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb159"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb159-1"><a href="#cb159-1"></a>favorites<span class="ot">=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">32</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb158"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb158-1"><a href="#cb158-1"></a>favorites<span class="ot">=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">32</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="section-16" class="slide level2">
+<section id="section-14" class="slide level2">
 <h2></h2>
 <ul>
 <li>append</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb160"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb160-1"><a href="#cb160-1"></a>mtcars<span class="sc">$</span>favorites<span class="ot">=</span>favorites</span>
-<span id="cb160-2"><a href="#cb160-2"></a>mtcars</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb159"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb159-1"><a href="#cb159-1"></a>mtcars<span class="sc">$</span>favorites<span class="ot">=</span>favorites</span>
+<span id="cb159-2"><a href="#cb159-2"></a>mtcars</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                    miles per gallon cylinders displacement  hp drat    wt
 Mazda RX4                       21.0         6        160.0 110 3.90 2.620
@@ -1460,10 +1467,10 @@ Volvo 142E          18.60  1  1    4    2        32</code></pre>
 <h2>c.&nbsp;Subset your data:</h2>
 <p>We can also subset (or filter based on a conditional statement) a data frame using subset. The function takes two arguments subset(x, condition). X is the data frame to perform subset on, condition is the conditional statement to subset with:</p>
 </section>
-<section id="section-17" class="slide level2">
+<section id="section-15" class="slide level2">
 <h2></h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb162"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb162-1"><a href="#cb162-1"></a><span class="fu">subset</span>(mtcars, cylinders<span class="sc">&gt;</span><span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb161"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb161-1"><a href="#cb161-1"></a><span class="fu">subset</span>(mtcars, cylinders<span class="sc">&gt;</span><span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                    miles per gallon cylinders displacement  hp drat    wt
 Mazda RX4                       21.0         6        160.0 110 3.90 2.620
@@ -1518,7 +1525,7 @@ Maserati Bora       14.60  0  1    5    8        31</code></pre>
 <li><p>Load the dataset worms</p></li>
 <li><p>Try the command ‘summary()’</p></li>
 <li><p>Try to selectively rename 2 rows of your choice in mtcars.</p></li>
-<li><p>Try out what happens if you try to add a new column of a length that is less than 32.</p></li>
+<li><p>What happens if you try to add a new column of a length that is less than 32.</p></li>
 <li><p>Extract (using either [] or $) the columns Sepal.Length and Sepal.Width from the iris dataset and make a new data frame out of them using data.frame(). Subset the new data frame for Sepal.Length &gt; 4.6.</p></li>
 </ul>
 </section>
@@ -1533,34 +1540,35 @@ Maserati Bora       14.60  0  1    5    8        31</code></pre>
 <h2>5.1. Create a factor:</h2>
 <p>In the following chunk of code, we create a factor from a character object.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb164"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb164-1"><a href="#cb164-1"></a>mon <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"March"</span>,<span class="st">"February"</span>,<span class="st">"February"</span>,<span class="st">"November"</span>,<span class="st">"February"</span>,<span class="st">"March"</span>,<span class="st">"March"</span>,<span class="st">"March"</span>,<span class="st">"February"</span>,<span class="st">"November"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb163"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb163-1"><a href="#cb163-1"></a>mon <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"March"</span>,<span class="st">"February"</span>,<span class="st">"February"</span>,<span class="st">"November"</span>,<span class="st">"February"</span>,<span class="st">"March"</span>,<span class="st">"March"</span>,<span class="st">"March"</span>,<span class="st">"February"</span>,<span class="st">"November"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <p>Note that a is of character data type and fact is the factor representation of a.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb165"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb165-1"><a href="#cb165-1"></a><span class="fu">typeof</span>(mon)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb164"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb164-1"><a href="#cb164-1"></a><span class="fu">typeof</span>(mon)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "character"</code></pre>
 </div>
 </div>
 </section>
-<section id="section-18" class="slide level2">
+<section id="section-16" class="slide level2">
 <h2></h2>
 <p>Tell R that you want this to be a factor…</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb167"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb167-1"><a href="#cb167-1"></a>fact <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(mon)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb166"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb166-1"><a href="#cb166-1"></a>fact <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(mon)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <p>However, the derived object fact is now stored as an integer!</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb168"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb168-1"><a href="#cb168-1"></a><span class="fu">typeof</span>(fact)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb167"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb167-1"><a href="#cb167-1"></a><span class="fu">typeof</span>(fact)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "integer"</code></pre>
 </div>
 </div>
+<p><br></p>
 <p>Yet, when displaying the contents of fact we see character values.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb170"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb170-1"><a href="#cb170-1"></a>fact</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb169"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb169-1"><a href="#cb169-1"></a>fact</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1] March    February February November February March    March    March   
  [9] February November
@@ -1575,7 +1583,7 @@ Levels: February March November</code></pre>
 <p>This hidden information is stored in attributes.</p>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb172"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb172-1"><a href="#cb172-1"></a><span class="fu">attributes</span>(fact)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb171"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb171-1"><a href="#cb171-1"></a><span class="fu">attributes</span>(fact)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$levels
 [1] "February" "March"    "November"
@@ -1585,18 +1593,18 @@ $class
 </div>
 </div>
 </section>
-<section id="section-19" class="slide level2">
+<section id="section-17" class="slide level2">
 <h2></h2>
 <p>There are two attributes of the factor object fact : class and levels.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb174"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb174-1"><a href="#cb174-1"></a><span class="fu">class</span>(fact)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb173"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb173-1"><a href="#cb173-1"></a><span class="fu">class</span>(fact)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "factor"</code></pre>
 </div>
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb176"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb176-1"><a href="#cb176-1"></a><span class="fu">levels</span>(fact) <span class="co"># lists the three unique values in fact. The order reflects their *numeric* representation. In essence, fact is storing each value as an integer that points to one of the three unique levels.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb175"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb175-1"><a href="#cb175-1"></a><span class="fu">levels</span>(fact) <span class="co"># lists the three unique values in fact. The order reflects their *numeric* representation. In essence, fact is storing each value as an integer that points to one of the three unique levels.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "February" "March"    "November"</code></pre>
 </div>
@@ -1607,12 +1615,12 @@ $class
 <p><br></p>
 <p>To <em>appreciate the benefits of a factor we’ll first create a data frame</em>. One column will be assigned the fact factor and another will be assigned some random numeric values.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb178"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb178-1"><a href="#cb178-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">166</span>, <span class="dv">47</span>, <span class="dv">61</span>, <span class="dv">148</span>, <span class="dv">62</span>, <span class="dv">123</span>, <span class="dv">232</span>, <span class="dv">98</span>, <span class="dv">93</span>, <span class="dv">110</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb177"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb177-1"><a href="#cb177-1"></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">166</span>, <span class="dv">47</span>, <span class="dv">61</span>, <span class="dv">148</span>, <span class="dv">62</span>, <span class="dv">123</span>, <span class="dv">232</span>, <span class="dv">98</span>, <span class="dv">93</span>, <span class="dv">110</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb179"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb179-1"><a href="#cb179-1"></a>dat_fact <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">min_sunshine =</span> x, <span class="at">month =</span> fact)</span>
-<span id="cb179-2"><a href="#cb179-2"></a>dat_fact</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb178"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb178-1"><a href="#cb178-1"></a>dat_fact <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">min_sunshine =</span> x, <span class="at">month =</span> fact)</span>
+<span id="cb178-2"><a href="#cb178-2"></a>dat_fact</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   min_sunshine    month
 1           166    March
@@ -1628,12 +1636,12 @@ $class
 </div>
 </div>
 </section>
-<section id="section-20" class="slide level2">
+<section id="section-18" class="slide level2">
 <h2></h2>
 <p>The month column is now a factor with three levels: F, M and N. We can use the str() function to view the dataframe’s structure as well as its columns classes.</p>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb181"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb181-1"><a href="#cb181-1"></a><span class="fu">str</span>(dat_fact)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb180"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb180-1"><a href="#cb180-1"></a><span class="fu">str</span>(dat_fact)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   10 obs. of  2 variables:
  $ min_sunshine: num  166 47 61 148 62 123 232 98 93 110
@@ -1641,17 +1649,17 @@ $class
 </div>
 </div>
 </section>
-<section id="section-21" class="slide level2">
+<section id="section-19" class="slide level2">
 <h2></h2>
 <p>There are functions that recognize factor data types and allow you to split the output into groups defined by the factor’s unique levels. For example, to create three box plots of the value min_sunshine, one for each month group F, M and N:</p>
 <div class="cell columns column-output-location">
 <div class="column">
-<div class="sourceCode cell-code" id="cb183"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb183-1"><a href="#cb183-1"></a><span class="fu">boxplot</span>(min_sunshine <span class="sc">~</span> </span>
-<span id="cb183-2"><a href="#cb183-2"></a>          month, dat_fact, </span>
-<span id="cb183-3"><a href="#cb183-3"></a>        <span class="at">horizontal =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb182"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb182-1"><a href="#cb182-1"></a><span class="fu">boxplot</span>(min_sunshine <span class="sc">~</span> </span>
+<span id="cb182-2"><a href="#cb182-2"></a>          month, dat_fact, </span>
+<span id="cb182-3"><a href="#cb182-3"></a>        <span class="at">horizontal =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
-<p><img data-src="presentation_session_2_files/figure-revealjs/unnamed-chunk-85-1.png" width="960"></p>
+<p><img data-src="presentation_session_2_files/figure-revealjs/unnamed-chunk-86-1.png" width="960"></p>
 </div>
 </div>
 </div>
@@ -1665,53 +1673,56 @@ $class
 <p><br></p>
 <p>This means that regardless of the order in which the factors appear in a table, <em>anytime a plot or operation is conditioned by the factor, the grouped elements will appear in the order defined by the levels’ hierarchy</em>.</p>
 </section>
-<section id="section-22" class="slide level2">
+<section id="section-20" class="slide level2">
 <h2></h2>
 <p>If we wanted the box plots to be plotted in a different order we must modify the month column by <em>releveling</em> the factor object as follows:</p>
-<div class="cell columns column-output-location">
-<div class="column">
-<div class="sourceCode cell-code" id="cb184"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb184-1"><a href="#cb184-1"></a>dat_fact<span class="sc">$</span>month <span class="ot">&lt;-</span> <span class="fu">factor</span>(dat_fact<span class="sc">$</span>month,</span>
-<span id="cb184-2"><a href="#cb184-2"></a>                  <span class="at">levels=</span><span class="fu">c</span>(<span class="st">"November"</span>,<span class="st">"February"</span>,<span class="st">"March"</span>))</span>
-<span id="cb184-3"><a href="#cb184-3"></a><span class="fu">str</span>(dat_fact)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb183"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb183-1"><a href="#cb183-1"></a>dat_fact<span class="sc">$</span>month <span class="ot">&lt;-</span> <span class="fu">factor</span>(dat_fact<span class="sc">$</span>month,</span>
+<span id="cb183-2"><a href="#cb183-2"></a>                  <span class="at">levels=</span><span class="fu">c</span>(<span class="st">"November"</span>,<span class="st">"February"</span>,<span class="st">"March"</span>))</span>
+<span id="cb183-3"><a href="#cb183-3"></a><span class="fu">str</span>(dat_fact)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>'data.frame':   10 obs. of  2 variables:
  $ min_sunshine: num  166 47 61 148 62 123 232 98 93 110
  $ month       : Factor w/ 3 levels "November","February",..: 3 2 2 1 2 3 3 3 2 1</code></pre>
 </div>
 </div>
-</div>
-<p><br></p>
-<div class="cell columns column-output-location">
-<div class="column">
-<div class="sourceCode cell-code" id="cb186"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb186-1"><a href="#cb186-1"></a><span class="fu">boxplot</span>(min_sunshine <span class="sc">~</span> month, </span>
-<span id="cb186-2"><a href="#cb186-2"></a>        dat_fact, <span class="at">horizontal =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column fragment">
-<div class="cell-output-display">
-<p><img data-src="presentation_session_2_files/figure-revealjs/unnamed-chunk-87-1.png" width="960"></p>
-</div>
-</div>
-</div>
 </section>
+<section id="section-21" class="slide level2">
+<h2></h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb185"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb185-1"><a href="#cb185-1"></a><span class="fu">boxplot</span>(min_sunshine <span class="sc">~</span> month, </span>
+<span id="cb185-2"><a href="#cb185-2"></a>        dat_fact, <span class="at">horizontal =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="presentation_session_2_files/figure-revealjs/unnamed-chunk-88-1.png" width="960" class="r-stretch"></section>
 <section id="tasks" class="slide level2" data-background="#85929E">
 <h2>Tasks</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
 <ul>
-<li><p>Load the dataset esoph. This data frame contains the data from a case-control study of (o)esophageal cancer in Ille-et-Vilaine, France.</p></li>
-<li><p>remove the last column of the data frame.</p></li>
+<li><p>Load ‘esoph’ which contains the data from a case-control study of (o)esophageal cancer</p></li>
+<li><p>remove the last column</p></li>
 <li><p>rename the columns from agegp to Age_Group, from alcgp to Alcohol_consump, from tobgp to Tobacco_consump and leave the column name of ncases the same.</p></li>
-<li><p>subset the dataframe to only contain rows that have an Alcohol_consump of 120+.</p></li>
-<li><p>convert the agegp into a factor and assign it to a new variable. Assess the attributes of that variable.</p></li>
+</ul>
+</div><div class="column" style="width:5%;">
+<!-- empty column to create gap -->
+</div><div class="column" style="width:45%;">
+<ul>
+<li><p>subset to only contain rows that have an Alcohol_consump of 120+.</p></li>
+<li><p>convert agegp into a factor and assign it to a new variable. Assess the attributes of that variable.</p></li>
 <li><p>What data type is Alcohol_consump?</p></li>
 </ul>
+</div>
+</div>
 </section>
-<section id="matrices" class="slide level2" data-background="#E6B0AA">
+<section id="matrices" class="slide level2">
 <h2>6. Matrices</h2>
 <p>Matrices are atomic vectors with dimensions; the number of rows and columns. As with atomic vectors, the elements of a matrix must be of the same data type.</p>
 <p><br></p>
 <p>To create an empty matrix, we need to define those dimensions:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb187"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb187-1"><a href="#cb187-1"></a>m<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="at">nrow=</span><span class="dv">2</span>, <span class="at">ncol=</span><span class="dv">2</span>)</span>
-<span id="cb187-2"><a href="#cb187-2"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb186"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb186-1"><a href="#cb186-1"></a>m<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="at">nrow=</span><span class="dv">2</span>, <span class="at">ncol=</span><span class="dv">2</span>)</span>
+<span id="cb186-2"><a href="#cb186-2"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     [,1] [,2]
 [1,]   NA   NA
@@ -1721,43 +1732,41 @@ $class
 <p><br></p>
 <p>We can find out how many dimensions a matrix has by using</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb189"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb189-1"><a href="#cb189-1"></a><span class="fu">dim</span>(m)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb188"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb188-1"><a href="#cb188-1"></a><span class="fu">dim</span>(m)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 2 2</code></pre>
 </div>
 </div>
-</section>
-<section id="section-23" class="slide level2">
-<h2></h2>
+<p><br></p>
 <p>You can check that matrices are vectors with a class attribute of matrix by using class() and typeof().</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb191"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb191-1"><a href="#cb191-1"></a>m <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb190"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb190-1"><a href="#cb190-1"></a>m <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="section-24" class="slide level2">
+<section id="section-22" class="slide level2">
 <h2></h2>
-<p>While class() shows that m is a matrix, typeof() shows that in this case <em>fundamentally the matrix is an integer vector</em> (we will see later that they are not always integer vectors, but can be character vectors, too.</p>
+<p>While class() shows that m is a matrix, typeof() shows that in this case <em>the matrix is an integer vector</em> (these can be character vectors, too).</p>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb192"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb192-1"><a href="#cb192-1"></a><span class="fu">class</span>(m)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb191"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb191-1"><a href="#cb191-1"></a><span class="fu">class</span>(m)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "matrix" "array" </code></pre>
 </div>
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb194"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb194-1"><a href="#cb194-1"></a><span class="fu">typeof</span>(m)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb193"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb193-1"><a href="#cb193-1"></a><span class="fu">typeof</span>(m)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "integer"</code></pre>
 </div>
 </div>
 </section>
-<section id="section-25" class="slide level2">
+<section id="section-23" class="slide level2">
 <h2></h2>
 <p>When creating a matrix, it is important to remember that matrices <em>are filled column-wise</em></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb196"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb196-1"><a href="#cb196-1"></a>m<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">nrow=</span><span class="dv">2</span>, <span class="at">ncol=</span><span class="dv">3</span>)</span>
-<span id="cb196-2"><a href="#cb196-2"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb195"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb195-1"><a href="#cb195-1"></a>m<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">nrow=</span><span class="dv">2</span>, <span class="at">ncol=</span><span class="dv">3</span>)</span>
+<span id="cb195-2"><a href="#cb195-2"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     [,1] [,2] [,3]
 [1,]    1    3    5
@@ -1767,8 +1776,8 @@ $class
 <p><br></p>
 <p>If that is not what you want, you can use the byrow argument (a logical: can be TRUE or FALSE) to specify how the matrix is filled</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb198"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb198-1"><a href="#cb198-1"></a>m<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">nrow=</span><span class="dv">2</span>, <span class="at">ncol=</span><span class="dv">3</span>, <span class="at">byrow=</span><span class="cn">TRUE</span>)</span>
-<span id="cb198-2"><a href="#cb198-2"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb197"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb197-1"><a href="#cb197-1"></a>m<span class="ot">&lt;-</span><span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">nrow=</span><span class="dv">2</span>, <span class="at">ncol=</span><span class="dv">3</span>, <span class="at">byrow=</span><span class="cn">TRUE</span>)</span>
+<span id="cb197-2"><a href="#cb197-2"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     [,1] [,2] [,3]
 [1,]    1    2    3
@@ -1776,28 +1785,28 @@ $class
 </div>
 </div>
 </section>
-<section id="section-26" class="slide level2">
+<section id="section-24" class="slide level2">
 <h2></h2>
 <p>You can create a matrix from a vector:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb200"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb200-1"><a href="#cb200-1"></a>m<span class="ot">&lt;-</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>, <span class="at">size=</span><span class="dv">10</span>)</span>
-<span id="cb200-2"><a href="#cb200-2"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb199"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb199-1"><a href="#cb199-1"></a>m<span class="ot">&lt;-</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>, <span class="at">size=</span><span class="dv">10</span>)</span>
+<span id="cb199-2"><a href="#cb199-2"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 88 58 38  3 57 11 92  7 78 24</code></pre>
+<pre><code> [1] 46 19 68 89 66 22 72 35 73 37</code></pre>
 </div>
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb202"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb202-1"><a href="#cb202-1"></a><span class="fu">dim</span>(m)<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">5</span>)</span>
-<span id="cb202-2"><a href="#cb202-2"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb201"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb201-1"><a href="#cb201-1"></a><span class="fu">dim</span>(m)<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">5</span>)</span>
+<span id="cb201-2"><a href="#cb201-2"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     [,1] [,2] [,3] [,4] [,5]
-[1,]   88   38   57   92   78
-[2,]   58    3   11    7   24</code></pre>
+[1,]   46   68   66   72   73
+[2,]   19   89   22   35   37</code></pre>
 </div>
 </div>
 </section>
-<section id="section-27" class="slide level2">
+<section id="section-25" class="slide level2">
 <h2></h2>
 <p><em>A lot is going on here. Let’s dissect it</em>:</p>
 <ul>
@@ -1806,21 +1815,21 @@ $class
 <p><br></p>
 <p><em>Note: if you want to get the same vector each time with the same parameters, you need to use set.seed() with a defined number first</em></p>
 </section>
-<section id="section-28" class="slide level2">
+<section id="section-26" class="slide level2">
 <h2></h2>
 <ul>
 <li>We assign the vector dimensions using dim() and c(2,5), with the later being c(rows, columns).</li>
 </ul>
 <p>All of the above takes the random integer vector and transforms it into a matrix with 2 rows and 5 columns.</p>
 </section>
-<section id="section-29" class="slide level2">
+<section id="section-27" class="slide level2">
 <h2></h2>
 <p>You can also bind columns and rows using cbind() and rbind:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb204"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb204-1"><a href="#cb204-1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span></span>
-<span id="cb204-2"><a href="#cb204-2"></a>y <span class="ot">&lt;-</span> <span class="dv">10</span><span class="sc">:</span><span class="dv">12</span></span>
-<span id="cb204-3"><a href="#cb204-3"></a>m<span class="ot">&lt;-</span><span class="fu">cbind</span>(x, y)</span>
-<span id="cb204-4"><a href="#cb204-4"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb203"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb203-1"><a href="#cb203-1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span></span>
+<span id="cb203-2"><a href="#cb203-2"></a>y <span class="ot">&lt;-</span> <span class="dv">10</span><span class="sc">:</span><span class="dv">12</span></span>
+<span id="cb203-3"><a href="#cb203-3"></a>m<span class="ot">&lt;-</span><span class="fu">cbind</span>(x, y)</span>
+<span id="cb203-4"><a href="#cb203-4"></a>m</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     x  y
 [1,] 1 10
@@ -1830,8 +1839,8 @@ $class
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb206"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb206-1"><a href="#cb206-1"></a>n<span class="ot">&lt;-</span><span class="fu">rbind</span>(x,y)</span>
-<span id="cb206-2"><a href="#cb206-2"></a>n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb205"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb205-1"><a href="#cb205-1"></a>n<span class="ot">&lt;-</span><span class="fu">rbind</span>(x,y)</span>
+<span id="cb205-2"><a href="#cb205-2"></a>n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  [,1] [,2] [,3]
 x    1    2    3
@@ -1844,7 +1853,7 @@ y   10   11   12</code></pre>
 <p><br></p>
 <p>Akin to vectors, we revisit our square-brackets and can retrieve elements of a matrix by specifying the index along each dimension (e.g.&nbsp;“row” and “column”) in single square brackets.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb208"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb208-1"><a href="#cb208-1"></a>m[<span class="dv">3</span>,<span class="dv">2</span>] <span class="co"># Note that it is [row,column].</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb207"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb207-1"><a href="#cb207-1"></a>m[<span class="dv">3</span>,<span class="dv">2</span>] <span class="co"># Note that it is [row,column].</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> y 
 12 </code></pre>
@@ -1874,7 +1883,7 @@ y   10   11   12</code></pre>
 <li><p>Tell us… What you liked and what you didn’t using the feedback survey</p></li>
 </ul>
 <div class="footer footer-default">
-<p><a href="https://rstudio-conf-2022.github.io/get-started-quarto/">Coding for Reproducible Research</a></p>
+<p><a href="https://uniexeterrse.github.io/workshop-homepage/">Coding for Reproducible Research</a></p>
 </div>
 </section></section>
     </div>
