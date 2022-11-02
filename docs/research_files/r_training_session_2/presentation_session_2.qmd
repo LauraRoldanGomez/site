@@ -8,7 +8,7 @@ format:
     scrollable: true
     highlight-style: arrow-light
     slide-number: c/t
-    footer: "[Coding for Reproducible Research](https://rstudio-conf-2022.github.io/get-started-quarto/)"
+    footer: "[Coding for Reproducible Research](https://uniexeterrse.github.io/workshop-homepage/)"
     theme: default
 editor: visual
 ---
@@ -23,11 +23,13 @@ Emma Walker
 
 Xinran Du
 
+xd247@exeter.ac.uk
+
 <br>
 
 Laura Roldan-Gomez
 
-lr480\@exeter.ac.uk
+lr480@exeter.ac.uk
 
 # **Welcome to this hybrid session**
 
@@ -45,8 +47,6 @@ lr480\@exeter.ac.uk
 -   It is based on other materials and our experience.
 
 -   I have taught R before, on multiple occasions.
-
-<br>
 
 -   So today will be an experiment but should run smoothly.
 
@@ -70,6 +70,8 @@ The rest of the rules of engagement are available on course [website](https://un
 -   Method of delivery: three parts with tasks and breaks every hour or so
 
 -   Please sign in/register your attendance, via an online sheet [link](https://docs.google.com/spreadsheets/d/1ox_gFXCiRw_gznYxdA-cfI15fpgr5WS_FCR1yBqmVfg/edit#gid=0)
+
+![](images/today.png){.absolute bottom="300" right="5" width="20%"}
 
 # Our plan for this session
 
@@ -111,6 +113,8 @@ Take a few minutes for:
 -   Character or strings
 -   Logical
 
+![](images/datatypes.png){.absolute bottom="150" right="100" width="10%"}
+
 ## 2.1. Numeric
 
 -   integers
@@ -144,6 +148,8 @@ class(15.5)
 class(1+4i)
 ```
 
+![](images/numeric.png){.absolute top="15" right="5" width="10%"}
+
 ## 2.2. Characters or strings:
 
 <br>
@@ -163,6 +169,8 @@ consists of letters, words, sentences or characters, such as:
 class("a") # Check
 
 ```
+
+![](images/string.png){.absolute top="15" right="5" width="10%"}
 
 ## 
 
@@ -196,7 +204,9 @@ class("a") # Check
 
 ## 2.3. Logical:
 
-Logical values can either be TRUE or FALSE or sometimes 1 and 0.
+Logical values can either be TRUE or FALSE
+
+or sometimes 1 and 0.
 
 <br>
 
@@ -215,6 +225,8 @@ typeof(z)
 z = (c(1,0,0,1)) 
 typeof(z)
 ```
+
+![](images/logical.png){.absolute top="10" right="5" width="10%"}
 
 ## 3. Data Structures
 
@@ -281,15 +293,31 @@ z <- letters[1:5] # the first 5 letters of the alphabet
 v_log <- c(TRUE, FALSE, FALSE, TRUE, TRUE) # a logical vector
 ```
 
-## CONCATENATE, INDEXING AND COERCION
+## {background="#F9E79F"}
+
+**CONCATENATE,**
 
 <br>
 
-*Concatenate* The concatenate or combine c() function will construct a vector. We used it above to construct the logical vector.
+**INDEXING** 
 
 <br>
 
-The function c() can also be used to add elements to a vector.
+AND 
+
+<br>
+
+**COERCION**
+
+
+
+## Concatenate
+
+or combine c() function constructs a vector. We used it above to construct the logical vector.
+
+<br>
+
+**c()** can also be used to add elements to a vector.
 
 ```{r, echo=T}
 v_name <- c("Sarah", "Tracy", "Jon")
@@ -310,7 +338,7 @@ v_name<- c("Greg", v_name)
 v_name
 ```
 
-## Let's put it together
+## Let's use it
 
 <br>
 
@@ -498,15 +526,20 @@ str(ourdata) # This is making more sense
 
 Note: If you need to change something to character, you use as.character
 
+
 ## b. lists:
 
 <br>
 
-Lists are still vectors but can contain several datatypes (can be *heterogenous*) and each atom of the list can itself be composed of more than one atom (has a length \> one).
+...still vectors but can contain several datatypes (can be *heterogenous*)
+
+...each atom of the list can itself be composed of more than one atom (has a length > one).
 
 <br>
 
-Atomic vectors are very constrained: atoms are of a scalar/length 1 and need to be one data type. You might find yourself needing a vector that violates these constraints and that can have length greater than 1 and not be of the same type.
+Atomic vectors are very constrained (atoms are of a scalar/length 1 and need to be one data type).
+
+You might need a vector that violates these constraints - can have length > 1 and not be of the same type.
 
 ## 
 
@@ -582,7 +615,7 @@ ourdata_as_list[[1]]
 
 ## 
 
-3.) With the \$ addressing named components. Like \[\[, this can only be used to access a single component, but it is even more limited: You must specify the component by name.
+3.) With the \$ addressing named components. Like [[, this can only be used to access a single component, but it is even more limited: You must specify the component by name.
 
 <br>
 
@@ -610,9 +643,6 @@ for (i in 1:5){
 } 
 ```
 
-## 
-
-A very good and easy-to-grasp explanation of the difference between the list-preserving indexing provided by \[ and the behaviour of \[\[ is given here: the pepper shaker analogy on R for Data Science(https://r4ds.had.co.nz/vectors.html#lists-of-condiments).
 
 ## Tasks and break - 10 minutes {background="#F8C471"}
 
@@ -635,13 +665,11 @@ Data frames are the data structure you will use the most for statistics or data 
 
 <br>
 
-4.1. Get your data:
+## **Get your data:**
 
 To get your data in R, you can do one of three things:
 
 -   Create your own data set (we did that already with 'ourdata')
-
-<br>
 
 -   Use a built-in data set like iris
 
@@ -649,15 +677,13 @@ To get your data in R, you can do one of three things:
 data(iris)
 ```
 
-<br>
-
 -   Load your own data. There are multiple ways to load your data, for example using the command read.csv:
 
 ```{r, echo=T}
 worms <- read.csv("data/worms.csv")
 ```
 
-## 4.1 Create a data frame:
+## Create a data frame:
 
 <br>
 
@@ -668,7 +694,7 @@ dat <- data.frame(id = letters[1:10], x = 1:10, y = 11:20)
 dat
 ```
 
-## 4.2. Explore a data frame:
+## Explore a data frame:
 
 Second, let's use several commands to explore a data frame:
 
@@ -716,7 +742,7 @@ is.list(dat)
 class(dat)
 ```
 
-## 4.3. Indexing/slicing
+## Indexing/slicing
 
 <br>
 
@@ -730,18 +756,27 @@ Because data frames are rectangular, elements of data frame can be referenced by
 dat[1, 3] # You know this already, this is a reminder
 ```
 
-## 
+## Data frames are also lists
 
-As data frames are also lists, it is possible to refer to columns (which are elements of such list) using the list notation, i.e. either double square brackets or a \$.
+...so, it is possible to refer to columns (which are elements of such list) using the list notation, i.e. either double square brackets or a \$.
+
+<br>
+
 
 ```{r, echo=T}
 dat[["y"]]
+```
+
+<br>
+
+```{r}
 dat$y
 ```
 
-## 4.4. Restructure your data frame - *pimp up your data frame*
+## Restructure your data frame - *pimp up your data frame*
 
-a.  Add and change names:
+<br>
+- Add and change names:
 
 When you look at both the dat and iris data frames from earlier, they have no rownames
 
@@ -765,13 +800,11 @@ However, when we look at the mtcars data set, it does
 head(mtcars) # *mtcars has rownames!*
 ```
 
-<br>
 
-Let's assume we want to make dat a bit more fancy and we want to give each row a name. What could we do?
 
-## 
+## Go fancy
 
-Albeit a bit non-sensical (but the entire data frame is just a generic example), we could name the rows as follows:
+To give give each row a name, we can... Albeit a bit non-sensical but the entire data frame is just a generic example...
 
 ```{r, echo=T}
 names<-c("first","second","third","fourth","fifth","sixth", "seventh","eighth","ninth","tenth") # we create a vector
@@ -851,9 +884,9 @@ subset(mtcars, cylinders>4)
 
 -   Try to selectively rename 2 rows of your choice in mtcars.
 
--   Try out what happens if you try to add a new column of a length that is less than 32.
+-   What happens if you try to add a new column of a length that is less than 32.
 
--   Extract (using either \[\] or \$) the columns Sepal.Length and Sepal.Width from the iris dataset and make a new data frame out of them using data.frame(). Subset the new data frame for Sepal.Length \> 4.6.
+-   Extract (using either [] or $) the columns Sepal.Length and Sepal.Width from the iris dataset and make a new data frame out of them using data.frame(). Subset the new data frame for Sepal.Length > 4.6.
 
 ## 5. Special section - Factors
 
@@ -896,6 +929,8 @@ However, the derived object fact is now stored as an integer!
 ```{r, echo=T}
 typeof(fact)
 ```
+
+<br>
 
 Yet, when displaying the contents of fact we see character values.
 
@@ -988,36 +1023,46 @@ This means that regardless of the order in which the factors appear in a table, 
 If we wanted the box plots to be plotted in a different order we must modify the month column by *releveling* the factor object as follows:
 
 ```{r, echo=T}
-#| output-location: column-fragment
-
 dat_fact$month <- factor(dat_fact$month,
                   levels=c("November","February","March"))
 str(dat_fact)
 ```
 
-<br>
+##
 
 ```{r, echo=T}
-#| output-location: column-fragment
 boxplot(min_sunshine ~ month, 
         dat_fact, horizontal = TRUE)
 ```
 
 ## Tasks {background="#85929E"}
 
--   Load the dataset esoph. This data frame contains the data from a case-control study of (o)esophageal cancer in Ille-et-Vilaine, France.
+:::: {.columns}
 
--   remove the last column of the data frame.
+::: {.column width="45%"}
+-   Load 'esoph' which contains the data from a case-control study of (o)esophageal cancer
+
+-   remove the last column
 
 -   rename the columns from agegp to Age_Group, from alcgp to Alcohol_consump, from tobgp to Tobacco_consump and leave the column name of ncases the same.
+:::
 
--   subset the dataframe to only contain rows that have an Alcohol_consump of 120+.
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
 
--   convert the agegp into a factor and assign it to a new variable. Assess the attributes of that variable.
+::: {.column width="45%"}
+-   subset to only contain rows that have an Alcohol_consump of 120+.
+
+-   convert agegp into a factor and assign it to a new variable. Assess the attributes of that variable.
 
 -   What data type is Alcohol_consump?
 
-## 6. Matrices {background="#E6B0AA"}
+:::
+
+::::
+
+## 6. Matrices
 
 Matrices are atomic vectors with dimensions; the number of rows and columns. As with atomic vectors, the elements of a matrix must be of the same data type.
 
@@ -1038,7 +1083,7 @@ We can find out how many dimensions a matrix has by using
 dim(m)
 ```
 
-## 
+<br> 
 
 You can check that matrices are vectors with a class attribute of matrix by using class() and typeof().
 
@@ -1048,7 +1093,7 @@ m <- matrix(c(1:3))
 
 ## 
 
-While class() shows that m is a matrix, typeof() shows that in this case *fundamentally the matrix is an integer vector* (we will see later that they are not always integer vectors, but can be character vectors, too.
+While class() shows that m is a matrix, typeof() shows that in this case *the matrix is an integer vector* (these can be character vectors, too).
 
 <br>
 
