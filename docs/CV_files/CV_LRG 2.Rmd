@@ -1,0 +1,110 @@
+---
+name: Laura Roldán-Gómez
+qualifications: PhD(Candidate), MRes, MSc, BSc
+position: PhD Candidate
+address: University of Exeter, UK
+email: lr480@exeter.ac.uk
+date: "`r format(Sys.time(), '%B, %Y')`"
+headcolor: 414141
+docname: Curriculum Vitae
+output: 
+  vitae::awesomecv:
+    page_total: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "PhD Candidate Advanced Quantitative Methods ", "Expected 2023", "University of Exeter", "United Kingdom",
+  "MRes. Advanced Quantitative Methods", "2020", "", "",
+  "MRes. Sustainable Futures", "2019", "University of Bristol", "United Kingdom",
+  "MSc. Environmental Management", "2014", "Javeriana University", "Colombia",
+  "BSc. Biology", "2007", "Los Andes University", "Colombia"
+) %>% 
+  detailed_entries(Degree, Year, Institution, Where)
+```
+
+# Publications
+
+```{r}
+library(tibble)
+tribble(
+  ~ Title,~ Year,
+"L. Jasny, C. Prell, E. Schiffer, L. Roldan, M. Barnes, P. Matous, M. Hamilton, D. Jacobs, J. Sayles, A. Guerrero. Participant Engagement in Environmentally Focused Social Network Data Collection. Social Networks","2021",
+"Ungar, P., Osejo, A., Roldán, L., Buitrago, E. (2014). Caracterización del sistema social asociado al territorio. En: Sarmiento, C. y P. Ungar (Eds). Aportes a la delimitación del páramo mediante la identificación de los límites inferiores del ecosistema (pp. 54-68).", "2014"
+) %>% 
+  detailed_entries(Title, Year)
+```
+
+# Conference Presentations
+
+```{r}
+library(tibble)
+tribble(
+  ~ Conference, ~ When,
+  "ECPR - General Conference", "2022",
+  "Sunbelt", "2022",
+  "PolNet", "2022",
+  "European Conference of Social Networks", "2021",
+  "Sunbelt", "2020"
+) %>% 
+  detailed_entries(Conference, When)
+```
+
+# Teaching Experience
+```{r}
+library(tibble)
+tribble(
+  ~ Role, ~ When, ~ Institution, ~ Where,
+  "Co-lead Statistical Modelling in R", "2022", "University of Exeter","United Kingdom",
+  "Co-lead Introduction to R", "2022", "University of Exeter","United Kingdom",
+  "Introduction to Social Network Analysis with R and statnet
+", "Jan 2022", "Teaching Assistant, Heriot Watt University", "United Kingdom",
+  "Introduction to Social Network Analysis", "Jan-Mar 2021", "Teaching Assistant, University of Exeter", "United Kingdom",
+  "Data Analysis in Social Science I", "Jan-Mar 2021", "", "",
+  "Data Analysis in Social Science II", "Sep-Dec 2020", "", "",
+  "Institute of Coding Summer School - R and Python", "Jun-Jul 2020", "", "", 
+  "Workshop on Social Networks", "Sep 2019", "", "",
+  "NHS R Training Course", "May 2019", "", "",
+) %>% 
+  detailed_entries(Role, When, Institution, Where)
+```
+
+# Workshops
+```{r}
+library(tibble)
+tribble(
+  ~ Role, ~ When, ~ Institution, ~ Where,
+  "Relational Spatial Analysis", "2022", "Technische Universität Berlin","Germany",
+  "Relational Event Models", "2022", "Carter Butts at Sunbelt","Australia",
+  "Social-Ecological Network Analysis", "2022", "Centre for Complex Systems Studies, Utrecht University","Netherlands",
+  "Learning from Geoenvironmental Data: Tools for a Changing Planet", "2022", "Venice International University","Italy",
+  "Advanced Social Network Techniques", "2021", "NUSC Summer School in Network and Data Science ","Online",
+  "Introduction to Social and Ecological Network Analysis", "2019", "University of Maryland - SESYNC","USA",
+) %>% 
+  detailed_entries(Role, When, Institution, Where)
+```
+
+# Employment History
+
+```{r}
+library(tibble)
+tribble(
+  ~ Role, ~ When, ~ Institution, ~ Where,
+  "Contractor", "2017-18","Unit for Rural and Agricultural Planning", "Colombia",
+  "Research Assistant", "Mar-Nov 2014", "University of Exeter - Geography Dept", "United Kingdom",
+  "Researcher", "2011-14","Institute for Research on Biological Resources Alexander von Humboldt", "Colombia",
+  "Contractor", "2007-10","National Natural Parks System", "Colombia",
+) %>% 
+  detailed_entries(Role, When, Institution, Where)
+```
+
