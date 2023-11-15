@@ -25,17 +25,23 @@ Q-Step Centre, University of Exeter
 
 <br>
 
-Welcome to my site.
+Hello and welcome to my academic website! 
 
-I am a third year PhD student in the [Q-Step Centre](http://socialsciences.exeter.ac.uk/q-step/) at the University of Exeter. I am looking at how armed conflict in Colombia corresponds to changes in deforestation using network analysis methods.
- 
-My research interests include social-ecological systems and social network analysis.
+My name is Laura and I am a third year PhD student at the University of Exeter's [Q-Step Centre](http://socialsciences.exeter.ac.uk/q-step/). My current research focuses on the relationship between armed conflict in Colombia and deforestation, using innovative network analysis methods.
+
+I am passionate about studying social-ecological systems and using network analysis to understand complex relationships between nature, individuals, groups, and institutions. Through my research, I hope to contribute to a greater understanding of the ways in which human actions and societal structures interact with and impact the natural world.
+
+Please feel free to explore my website to learn more about my research interests, publications, and ongoing projects. 
+
+Thank you for visiting!
 
 
 <a href = "https://www.instagram.com/laroldangomez/?hl=en">
 ![](images/instagram.svg){width=21px}&nbsp;&nbsp;&nbsp;
 <a href = "https://www.linkedin.com/feed/">
-![](images/linkedin.svg){width=21px}
+![](images/linkedin.svg){width=21px}&nbsp;&nbsp;&nbsp;
+<a href = "https://github.com/LauraRoldanGomez">
+![](images/github.png){width=21px}
 
 </div>
 <div class="col-sm-6">

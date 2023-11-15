@@ -51,6 +51,7 @@ tribble(
 library(tibble)
 tribble(
   ~ Conference, ~ When,
+  "Sunbelt", "2023",
   "ECPR - General Conference", "2022",
   "Sunbelt", "2022",
   "PolNet", "2022",
@@ -65,6 +66,7 @@ tribble(
 library(tibble)
 tribble(
   ~ Role, ~ When, ~ Institution, ~ Where,
+  "Co-lead Introduction to Social Network Analysis and Socio-Ecological Network Analysis", "2023", "Universidad Ibero", "México",
   "Co-lead Statistical Modelling in R", "2022", "University of Exeter","United Kingdom",
   "Co-lead Introduction to R", "2022", "University of Exeter","United Kingdom",
   "Introduction to Social Network Analysis with R and statnet
@@ -84,6 +86,7 @@ tribble(
 library(tibble)
 tribble(
   ~ Role, ~ When, ~ Institution, ~ Where,
+  "Spatial Social Network Analysis", "2023", "Sunbelt", "Portland, Oregon - USA",
   "Relational Spatial Analysis", "2022", "Technische Universität Berlin","Germany",
   "Relational Event Models", "2022", "Carter Butts at Sunbelt","Australia",
   "Social-Ecological Network Analysis", "2022", "Centre for Complex Systems Studies, Utrecht University","Netherlands",
@@ -108,3 +111,13 @@ tribble(
   detailed_entries(Role, When, Institution, Where)
 ```
 
+# Other roles
+```{r}
+library(tibble)
+tribble(
+  ~ Role, ~ When, ~ Institution,
+  "Panel Moderator", "2023", "Tips and Tricks for your PhD",
+  "Council Member", "2022-ongoing","Early and Mid Career Researchers in Social Network Analysis"
+) %>% 
+  detailed_entries(Role, When, Institution)
+```
