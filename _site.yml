@@ -10,7 +10,10 @@ navbar:
       href: Research.html 
     - text: "R-Training"
       icon: fa-solid fa-robot
-      href: rtraining.html      
+      href: rtraining.html  
+    - text: "Entrenamiento en R"
+      icon: fa-solid fa-robot
+      href: r_entrenamiento.html      
     - text: "CV"
       icon: fa-solid fa-fingerprint
       href: CV.html
