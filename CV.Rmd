@@ -41,6 +41,10 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 
 # Publications
 <hr>
+
+F.S. Sosa Rodriguez, F. Pineda Campos, A. Flores Diaz, L. Roldan Gomez, E. Rios Patron. (2023). Estrategias para la integración de sujetos y actores sociales en la restauración del ciclo socionatural del agua. En: J.R. Garcia Barrios, S. Mozka Estrada (Eds). Problemas del agua en México. ¿Cómo abordarlos? (pp. 339-361)., (2023)
+<br>
+
 L. Jasny, C. Prell, E. Schiffer, L. Roldan, M. Barnes, P. Matous, M. Hamilton, D. Jacobs, J. Sayles, A. Guerrero. Participant Engagement in Environmentally Focused Social Network Data Collection. Social Networks, 2021
 
 <br>
