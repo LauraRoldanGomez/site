@@ -24,7 +24,7 @@ library(vitae)
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "PhD Candidate Advanced Quantitative Methods ", "Expected 2023", "University of Exeter", "United Kingdom",
+  "PhD Candidate Advanced Quantitative Methods ", "Expected 2024", "University of Exeter", "United Kingdom",
   "MRes. Advanced Quantitative Methods", "2020", "", "",
   "MRes. Sustainable Futures", "2019", "University of Bristol", "United Kingdom",
   "MSc. Environmental Management", "2014", "Javeriana University", "Colombia",
@@ -118,7 +118,8 @@ library(tibble)
 tribble(
   ~ Role, ~ When, ~ Institution,
   "Panel Moderator", "2023", "Tips and Tricks for your PhD",
-  "Council Member", "2022-ongoing","Early and Mid Career Researchers in Social Network Analysis"
+  "Council Member", "2022-ongoing","Early and Mid Career Researchers in Social Network Analysis",
+  "Coordination group member", "2020-ongoing", "Colectivo Riberear, Mexico"
 ) %>% 
   detailed_entries(Role, When, Institution)
 ```

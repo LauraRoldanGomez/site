@@ -27,7 +27,7 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 # Education
 <hr>
 
-- PhD Candidate Advanced Quantitative Methods, Expected 2023, University of Exeter, United Kingdom
+- PhD Candidate Advanced Quantitative Methods, Expected 2024, University of Exeter, United Kingdom
 
 - MRes. Advanced Quantitative Methods, 2020, University of Exeter, United Kingdom
 
@@ -97,6 +97,8 @@ Ungar, P., Osejo, A., Roldán, L., Buitrago, E. (2014). Caracterización del sis
 - Panel Moderator, Tips and Tricks for your PhD, 2023
 
 - Council Member, Early and Mid Career Researchers in Social Network Analysis, 2022-ongoing
+
+- Member of the coordinating group for the Riberear Collective, 2020-ongoing
 
 <br>
 
