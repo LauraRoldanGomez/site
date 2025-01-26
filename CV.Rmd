@@ -1,5 +1,5 @@
 ---
-title: ""
+title: 
 output:
   html_document:
     toc: true
@@ -27,7 +27,7 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 # Education
 <hr>
 
-- PhD Candidate Advanced Quantitative Methods, Expected 2024, University of Exeter, United Kingdom
+- PhD Candidate Advanced Quantitative Methods, Expected 2025, University of Exeter, United Kingdom
 
 - MRes. Advanced Quantitative Methods, 2020, University of Exeter, United Kingdom
 
@@ -56,6 +56,10 @@ Ungar, P., Osejo, A., Roldán, L., Buitrago, E. (2014). Caracterización del sis
 # Conference Presentations
 
 <hr>
+2024 &emsp; Australian Social Network Analysis Conference - ASNAC
+
+2024 &emsp; Women in Network Science
+
 2023 &emsp; Sunbelt
 
 2022 &emsp; ECPR - General Conference
@@ -74,6 +78,16 @@ Ungar, P., Osejo, A., Roldán, L., Buitrago, E. (2014). Caracterización del sis
 
 <hr>
 
+- Introduction to Research Design in Politics and International Relations, Teaching Assistant, Jan-Mar 2025, University of Exeter, UK
+
+- Data Analysis in Social Science II, Teaching Assistant, Sep-Dec 2024, University of Exeter, UK
+
+- Introduction to Social Network Analysis and Socio-Ecological Network Analysis, Module Instructor, February 2023, Universidad Ibero, México  
+
+- Statistical Modelling in R, Co-lead, Coding for Reproducible Research Programme, June 2022, University of Exeter, UK
+
+- Introduction to R, Co-lead, Coding for Reproducible Research Programme, June 2022, University of Exeter, UK
+
 - Introduction to Social Network Analysis with R and statnet, Jan 2022, Teaching Assistant, Heriot Watt University, UK
 
 - Introduction to Social Network Analysis, Jan-Mar 2021, Teaching Assistant, University of Exeter, UK
@@ -90,16 +104,21 @@ Ungar, P., Osejo, A., Roldán, L., Buitrago, E. (2014). Caracterización del sis
 
 <br>
 
-# Other Academic Roles
+# Other Service
 
 <hr>
 
-- Panel Moderator, Tips and Tricks for your PhD, 2023
+- INSNA Membership Engagement Committee, 2024 - Ongoing, Committee Member
 
-- Council Member, Early and Mid Career Researchers in Social Network Analysis, 2022-ongoing
+- Early and Middle Career Researchers in Social Network Analysis, 2022-2024, Council Member
 
-- Member of the coordinating group for the Riberear Collective, 2020-ongoing
+- The PhD Journey, 2024, Panel Member
 
+- Tips and Tricks for your PhD, 2023, Panel Moderator
+
+- Colectivo Riberear, Mexico, 2020-ongoing, Coordination Group Member
+
+- Faculty of Environmental and Rural Studies, Universidad Javeriana, Colombia,2019-2020, Steering Committee Member
 <br>
 
 # Employment History

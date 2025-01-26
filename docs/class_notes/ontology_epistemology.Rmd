@@ -1,0 +1,264 @@
+---
+title: "My Class Notes: Ontology and Epistemology"
+output: 
+  html_document:
+    highlight: tango
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+    number_sections: true
+    theme: readable
+---
+<br><br>
+
+- How do I view the world? 
+
+Ontologies define how we view reality and its nature. Ontology is about what exists. It asks: What is reality? What things are real?
+Example: Does free will exist? Are numbers real? Is love a physical thing or just a concept?
+
+- How should I investigate the world?
+
+Epistemologies define how we acquire and validate knowledge. Epistemology is about how we know things. It asks: How do we know what we know? What counts as knowledge?
+Example: Can we trust our senses? Is scientific evidence the only way to know the truth? Can opinions count as knowledge?
+
+- Both influence research questions, methods, and interpretations.
+	
+- Knowing this about me helps me understand potential biases and ensure balanced and rigorous approaches.
+
+----
+
+----
+
+
+**Example from the quiz:**
+<br><br>
+
+<div style="float: left; width: 50%; margin-right: 10px;">
+  <img src="/Users/roldix/Library/Mobile Documents/com~apple~CloudDocs/TA/2025_research_Design/Week2/postpositivist.png" alt="Postpositivist" style="width: 100%;">
+</div>
+
+
+Knowing that my approach is post-positivist gives me clarity and consistency in my thinking, methodology, and interpretation of knowledge.
+<br><br>
+1. Guides My Research Approach
+
+- Post-positivism recognises that while we can strive for objective knowledge, our understanding of the world is fallible and influenced by context and perspective. Knowing this:
+
+- Encourages rigorous testing and falsification rather than seeking absolute truth.
+
+- Leads to mixed or nuanced methodologies, balancing quantitative and qualitative approaches to explore complex phenomena.
+
+- Emphasises the use of critical realism, accepting that there is a reality out there, but our understanding of it is always mediated through theories and biases.
+
+<br><br>
+
+2. Shapes the Way I View Knowledge
+
+- Helps me embrace uncertainty and acknowledge that knowledge is provisional and open to revision.
+
+- Guides how I evaluate evidence, recognising the limitations of measurement and observation while striving for reliability and validity.
+
+- Encourages critical reflection on my own assumptions and biases in the process of inquiry.
+
+<br><br>
+
+3. Informs My Epistemological and Ontological Consistency
+
+- Post-positivists often adopt a realist ontology (the world exists independently of my perceptions) and a critical epistemology (I can only know it imperfectly through evidence and reasoning). Being aware of this:
+
+- Ensures my philosophical stance aligns with my research design and methods.
+
+- Creates coherence between my theory, methodology, and interpretation of results, making my work more credible.
+
+<br><br>
+
+4. Positions Me in Academic Discourse
+
+- Helps me articulate where my work fits within broader debates, such as between positivism (which assumes objective truth) and constructivism (which focuses on subjective realities).
+
+- Allows me to engage critically with other perspectives, recognising their strengths and limitations without dismissing them outright.
+
+<br><br>
+
+5. Improves Communication and Justification
+
+- Clearly explain my perspective to others (e.g., supervisors, reviewers, or peers), justifying why I’ve chosen certain methods or interpretations.
+
+- Defend my choices in terms of methodology and conclusions, showing how they align with my philosophical stance.
+
+- Avoid being criticised for inconsistencies in my research or theoretical framework.
+
+<br><br>
+
+6. Encourages Practical Rigour
+
+- Post-positivism focuses on triangulation, critical engagement, and continuous refinement of ideas
+
+- It reminds me to combine multiple methods or perspectives to strengthen your conclusions.
+
+- Encourages me to critically evaluate limitations in my data and findings, making my work more robust and transparent.
+
+----
+
+----
+
+**Example in Practice:**
+
+Imagine I'm conducting research on a social issue like healthcare disparities:
+
+- A positivist might rely purely on statistical data to “prove” a causal relationship.
+
+- A post-positivist would also use statistical tools but would acknowledge that the findings are influenced by limitations in the data, the instruments used, and the context. They might supplement this with qualitative interviews to explore the human experience behind the numbers.
+
+By recognising my post-positivist stance, I consciously account for these complexities, making my conclusions more credible and reflective of reality.
+
+In summary, knowing your approach is post-positivist gives you a framework to build knowledge that is rigorous, critical, and adaptive, helping you navigate the complexities of research and knowledge creation.
+
+---
+
+
+# **ONTOLOGY**
+
+Ontologies help us understand different perspectives on reality and guide how we approach research and knowledge. It refers to the study of being and reality, focusing on what exists and the nature of existence.
+
+Why it matters: Shapes how we understand the world and guides research approaches and methodologies.
+
+
+## Realism 
+
+Key Idea: Reality exists independently of human perception.
+
+Example: Studying systemic barriers (e.g., how poverty impacts education outcomes).
+
+Potential Biases: Overemphasis on objective structures may overlook subjective experiences and contextual variability.
+
+## Relativism {#relativism}
+
+Key Idea: Reality is subjective and varies by individual or group.
+
+Example: Exploring cultural interpretations of health and wellness.
+
+Potential Biases: Overemphasis on subjectivity may undermine the identification of shared or systemic patterns.
+
+## Constructivism {#constructivism}
+
+Key Idea: Reality is constructed through human interaction and shared meanings.
+
+Example: Analysing how workplace leadership is constructed through language.
+
+Potential Biases: May neglect material or objective conditions influencing social constructs.
+
+## Positivism {#positivism}
+
+Key Idea: Reality is objective, measurable, and knowable through empirical evidence.
+
+Example: Testing the efficacy of a new drug through controlled trials.
+
+Potential Biases: Overreliance on quantifiable data may disregard qualitative aspects of phenomena.
+
+## Pragmatism {#pragmatism}
+
+Key Idea: Reality is what “works” in practice.
+
+Example: Using mixed methods to evaluate a community development programme.
+
+Potential Biases: Focus on practical outcomes may overlook theoretical depth or long-term implications.
+
+## Idealism {#idealism}
+
+Key Idea: Reality is shaped by ideas, consciousness, or the mind.
+
+Example: Examining how ideologies influence political movements.
+
+Potential Biases: May underestimate the role of material conditions and practical realities.
+
+## Materialism {#materialism}
+
+Key Idea: Reality is based on physical matter and processes.
+
+Example: Investigating how economic conditions impact mental health.
+
+Potential Biases: Overemphasis on material conditions may dismiss the role of ideas and consciousness.
+
+## Phenomenology {#phenomenology}
+
+Key Idea: Reality is based on individual lived experiences.
+
+Example: Exploring how patients experience chronic illness.
+
+Potential Biases: May be overly subjective and hard to generalise findings.
+
+## Structuralism {#structuralism}
+
+Key Idea: Reality is shaped by underlying structures, such as language or culture.
+
+Example: Analysing how language shapes societal power dynamics.
+
+Potential Biases: Focus on structures may overlook individual agency or change over time.
+
+## Post-Structuralism {#post-structuralism}
+
+Key Idea: Reality is fluid, fragmented, and shaped by power and discourse.
+
+Example: Investigating how immigration policies reinforce stereotypes.
+
+Potential Biases: May lead to excessive relativism and difficulty in drawing actionable conclusions.
+
+---
+<br><br>
+
+# **EPISTEMOLOGY**
+
+Definition: The study of knowledge—how we know what we know and how knowledge is justified.
+
+Why it matters: Epistemology influences how we approach research, interpret findings, and determine the validity of knowledge claims.
+
+## Empiricism
+
+Key Idea: Knowledge comes from sensory experience and evidence.
+
+Example: Using experiments and observations to test hypotheses.
+
+Potential Biases: Overreliance on observable data may disregard abstract concepts or theoretical insights.
+
+## Rationalism
+
+Key Idea: Knowledge is acquired through reason and logical deduction.
+
+Example: Developing mathematical theories through logical reasoning.
+
+Potential Biases: May undervalue empirical evidence and overemphasise theoretical constructs.
+
+## Constructivism
+
+Key Idea: Knowledge is constructed through social interactions and context.
+
+Example: Analysing how cultural norms influence learning practices.
+
+Potential Biases: May downplay universal truths or objective facts.
+
+## Pragmatism
+
+Key Idea: Knowledge is what works in practice and solves problems.
+
+Example: Combining quantitative and qualitative methods to address complex issues.
+
+Potential Biases: Focus on utility may neglect theoretical rigour or exploration of alternative perspectives.
+
+## Positivism
+
+Key Idea: Knowledge is objective and measurable through scientific methods.
+
+Example: Conducting controlled experiments to establish causal relationships.
+
+Potential Biases: May dismiss subjective experiences or interpretive approaches.
+
+## Interpretivism
+
+Key Idea: Knowledge is derived from interpreting meaning within context.
+
+Example: Conducting interviews to understand individual perspectives on societal issues.
+
+Potential Biases: Overemphasis on context may undermine generalisability or objective analysis.
+

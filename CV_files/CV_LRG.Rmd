@@ -1,7 +1,7 @@
 ---
-name: Laura Roldán-Gómez
+name: Laura Roldan-Gomez
 qualifications: PhD(Candidate), MRes, MSc, BSc
-position: PhD Candidate
+position: PhD Candidate in Advanced Quantitative Methods 
 address: University of Exeter, UK
 email: lr480@exeter.ac.uk
 date: "`r format(Sys.time(), '%B, %Y')`"
@@ -24,24 +24,62 @@ library(vitae)
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "PhD Candidate Advanced Quantitative Methods ", "Expected 2024", "University of Exeter", "United Kingdom",
+  "PhD Candidate Advanced Quantitative Methods ", "Expected 2025", "University of Exeter", "United Kingdom",
   "MRes. Advanced Quantitative Methods", "2020", "", "",
   "MRes. Sustainable Futures", "2019", "University of Bristol", "United Kingdom",
-  "MSc. Environmental Management", "2014", "Javeriana University", "Colombia",
-  "BSc. Biology", "2007", "Los Andes University", "Colombia"
+  "MSc. Environmental Management", "2014", "Universidad Javeriana", "Colombia",
+  "BSc. Biology", "2007", "Universidad de Los Andes", "Colombia"
 ) %>% 
   detailed_entries(Degree, Year, Institution, Where)
 ```
 
 # Publications
 
+## Journals
 ```{r}
 library(tibble)
 tribble(
   ~ Title,~ Year,
-"F.S. Sosa Rodriguez, F. Pineda Campos, A. Flores Diaz, L. Roldan Gomez, E. Rios Patron. (2023). Estrategias para la integración de sujetos y actores sociales en la restauración del ciclo socionatural del agua. En: J.R. Garcia Barrios, S. Mozka Estrada (Eds). Problemas del agua en México. ¿Cómo abordarlos? (pp. 339-361).", "2023",
-"L. Jasny, C. Prell, E. Schiffer, L. Roldan, M. Barnes, P. Matous, M. Hamilton, D. Jacobs, J. Sayles, A. Guerrero. Participant Engagement in Environmentally Focused Social Network Data Collection. Social Networks","2021",
-"Ungar, P., Osejo, A., Roldán, L., Buitrago, E. (2014). Caracterización del sistema social asociado al territorio. En: Sarmiento, C. y P. Ungar (Eds). Aportes a la delimitación del páramo mediante la identificación de los límites inferiores del ecosistema (pp. 54-68).", "2014"
+"- L. Jasny, C. Prell, E. Schiffer, L. Roldan, M. Barnes, P. Matous, M. Hamilton, D. Jacobs, J. Sayles, A. Guerrero. (2021) Participant Engagement in Environmentally Focused Social Network Data Collection. Social Networks","2021",
+) %>% 
+  detailed_entries(Title, Year)
+```
+
+## Working papers
+```{r}
+library(tibble)
+tribble(
+  ~ Title,
+"- Social-Ecological networks and risk: how is perceived and ecological risk associated with network structure? (First author with Lorien Jasny, Angela Guerrero, Michele Barnes, Steven Alexander",
+"- How do armed conflicts evolve? Relational Event Models in the Context of War (Single author)",
+"- The Use of Network Analysis in Understanding Environmental Outcomes: A Systematic Literature Review (Second author with Antony Emenyu and Lorien Jasny)",
+"- Scoping Review of the Integration of Network and Spatial Concepts and Methods in Investigating Socio-Ecological Systems (Single author)",
+"- Effect of Armed Conflict on Forest Cover in Colombia from 2000 to 2006: A Difference in Difference Analysis (Single author)"
+) %>% 
+  detailed_entries(Title)
+```
+
+## Book chapters
+```{r}
+library(tibble)
+tribble(
+  ~ Title,~ Year,
+"- F.S. Sosa Rodriguez, F. Pineda Campos, A. Flores Diaz, L. Roldan, E. Rios Patron. (2023). Estrategias para la integración de sujetos y actores sociales en la restauración del ciclo socionatural del agua. En: J.R. Garcia Barrios, S. Mozka Estrada (Eds). Problemas del agua en México. ¿Cómo abordarlos? (pp. 339-361).", "2023",
+"- Ungar, P., Osejo, A., Roldan, L., Buitrago, E. (2014). Caracterización del sistema social asociado al territorio. En: Sarmiento, C. y P. Ungar (Eds). Aportes a la delimitación del páramo mediante la identificación de los límites inferiores del ecosistema (pp. 54-68).", "2014",
+) %>% 
+  detailed_entries(Title, Year)
+```
+
+## Other
+```{r}
+library(tibble)
+tribble(
+  ~ Title,~ Year,
+ "- Roldan L. 2012. Element mapping of the standard for Biodiversity Information interoperability and the Darwin Core (Version 2011-10-26). Biodiversity Information System of Colombia. Bogotá D.C. Colombia. 53p.", "2012",
+"- Escobar D, Roldan L, Vélez D. 2012. Glossary and Acronyms: Interoperability and management on biodiversity content. Biodiversity Information System of Colombia, Bogotá D.C., Colombia, 6p.", "*",
+"- Wieczorek, J. 2011. The GBIF Integrated Publishing Toolkit User Manual, version 2.0. Copenhagen: Global Biodiversity Information Facility. Translation to Spanish by Escobar D, Roldan L, Amariles D, Bogota: SiB Colombia, 72 pp.", "2011",
+"- TDWG (2011). Darwin Core Elements: a quick reference guide. (Original version by TDWG, translated to Spanish by Roldan, L.). Bogota: SiB Colombia, 35 pp.", "*",
+"- Monitoring Information System for the National Natural Parks System Manual - SULA.", "*"
 ) %>% 
   detailed_entries(Title, Year)
 ```
@@ -52,11 +90,14 @@ tribble(
 library(tibble)
 tribble(
   ~ Conference, ~ When,
-  "Women in Network Science", "2024",
+  "Australian Social Network Analysis Conference - ASNAC", "2024",
+  "Women in Network Science", "*",
   "Sunbelt", "2023",
-  "ECPR - General Conference", "2022",
   "Sunbelt", "2022",
-  "PolNet", "2022",
+  "PGR and ECR Conference for Sociology, Philosophy, Anthropology
+and Politics Collaboration and Empowerment", "*",
+    "ECPR - General Conference", "*",
+  "PolNet", "*",
   "European Conference of Social Networks", "2021",
   "Sunbelt", "2020"
 ) %>% 
@@ -67,36 +108,51 @@ tribble(
 ```{r}
 library(tibble)
 tribble(
-  ~ Role, ~ When, ~ Institution, ~ Where,
-  "Co-lead Introduction to Social Network Analysis and Socio-Ecological Network Analysis", "2023", "Universidad Ibero", "México",
-  "Co-lead Statistical Modelling in R", "2022", "University of Exeter","United Kingdom",
-  "Co-lead Introduction to R", "2022", "University of Exeter","United Kingdom",
+  ~ Role,  ~ Institution, ~ Where, ~ When,
+  "Data Analysis in Social Science II", "Teaching Assistant, University of Exeter", "United Kingdom", "Sep-Dec 2024", 
+  "Introduction to Social Network Analysis", "", "", "Jan-Mar 2021", 
+  "Data Analysis in Social Science I",  "", "", "Jan-Mar 2021",
+  "Data Analysis in Social Science II", "", "", "Sep-Dec 2020", 
+  "Institute of Coding Summer School - R and Python",  "", "", "Jun-Jul 2020",
+  "Workshop on Social Networks", "", "", "Sep 2019", 
+  "NHS R Training Course", "", "", "May 2019",
+  "Statistical Modelling in R", "Co-lead, Coding for Reproducible Research Programme","", "June 2022", 
+  "Introduction to R", "Co-lead, Coding for Reproducible Research Programme","", "June 2022",
+  "Introduction to Social Network Analysis and Socio-Ecological Network Analysis", "Module Instructor, Universidad Ibero", "México", "February 2023", 
   "Introduction to Social Network Analysis with R and statnet
-", "Jan 2022", "Teaching Assistant, Heriot Watt University", "United Kingdom",
-  "Introduction to Social Network Analysis", "Jan-Mar 2021", "Teaching Assistant, University of Exeter", "United Kingdom",
-  "Data Analysis in Social Science I", "Jan-Mar 2021", "", "",
-  "Data Analysis in Social Science II", "Sep-Dec 2020", "", "",
-  "Institute of Coding Summer School - R and Python", "Jun-Jul 2020", "", "", 
-  "Workshop on Social Networks", "Sep 2019", "", "",
-  "NHS R Training Course", "May 2019", "", "",
+", "Teaching Assistant, Heriot Watt University", "United Kingdom", "January 2022", 
 ) %>% 
   detailed_entries(Role, When, Institution, Where)
 ```
 
-# Workshops
+# Awards
 ```{r}
 library(tibble)
 tribble(
-  ~ Role, ~ When, ~ Institution, ~ Where,
-  "Spatial Social Network Analysis", "2023", "Sunbelt", "Portland, Oregon - USA",
-  "Relational Spatial Analysis", "2022", "Technische Universität Berlin","Germany",
-  "Relational Event Models", "2022", "Carter Butts at Sunbelt","Australia",
-  "Social-Ecological Network Analysis", "2022", "Centre for Complex Systems Studies, Utrecht University","Netherlands",
-  "Learning from Geoenvironmental Data: Tools for a Changing Planet", "2022", "Venice International University","Italy",
-  "Advanced Social Network Techniques", "2021", "NUSC Summer School in Network and Data Science ","Online",
-  "Introduction to Social and Ecological Network Analysis", "2019", "University of Maryland - SESYNC","USA",
+  ~ Award, ~ When, ~ Institution, 
+ "University of Exeter", "2024", "Post-Graduate Researcher Academic Citizenship Award", 
+ "INSNA", "2023", "INSNA Student Member Travel Award", 
+ "INSNA",  "2022", "INSNA Travel Award", 
+ "Devon Wildlife Trust",  "2014", "Volunteer of the Year", 
 ) %>% 
-  detailed_entries(Role, When, Institution, Where)
+  detailed_entries(Award, When, Institution)
+```
+
+# Workshop Attendance
+```{r}
+library(tibble)
+tribble(
+  ~ Institution, ~ When, ~ Role, 
+  "Sunbelt Portland, USA","2023", "Spatial Social Network Analysis", 
+  "Technische Universität Berlin, Germany","2022","Relational Spatial Analysis", 
+  "Carter Butts at Sunbelt, Australia", "*", "Relational Event Models", 
+  "Centre for Complex Systems Studies, Utrecht University, Netherlands", "*", "Social-Ecological Network Analysis",   
+   "Venice International University, Italy", "*","Learning from Geoenvironmental Data: Tools for a Changing Planet", 
+  "NUSC Summer School in Network and Data Science, Online", "2021","Advanced Social Network Techniques", 
+  "Exeter University, UK","2020",  "Longitudinal Network Models Using RSiena", 
+  "University of Maryland - SESYNC, USA", "2019","Introduction to Social and Ecological Network Analysis", 
+) %>% 
+  detailed_entries(Institution, When, Role, )
 ```
 
 # Employment History
@@ -104,23 +160,28 @@ tribble(
 ```{r}
 library(tibble)
 tribble(
-  ~ Role, ~ When, ~ Institution, ~ Where,
-  "Contractor", "2017-18","Unit for Rural and Agricultural Planning", "Colombia",
-  "Research Assistant", "Mar-Nov 2014", "University of Exeter - Geography Dept", "United Kingdom",
-  "Researcher", "2011-14","Institute for Research on Biological Resources Alexander von Humboldt", "Colombia",
-  "Contractor", "2007-10","National Natural Parks System", "Colombia",
-) %>% 
-  detailed_entries(Role, When, Institution, Where)
-```
-
-# Other roles
-```{r}
-library(tibble)
-tribble(
-  ~ Role, ~ When, ~ Institution,
-  "Panel Moderator", "2023", "Tips and Tricks for your PhD",
-  "Council Member", "2022-ongoing","Early and Mid Career Researchers in Social Network Analysis",
-  "Coordination group member", "2020-ongoing", "Colectivo Riberear, Mexico"
+  ~ Role, ~ When, ~ Institution, 
+  "Researcher", "2024 - Ongoing", "Queensland University of Technology, Australia", 
+  "Contractor", "2017-2018", "Unit for Rural and Agricultural Planning, Colombia",
+  "Research Assistant", "Mar-Nov 2014", "Geography Department University of Exeter, United Kingdom",
+  "Researcher", "2011-2014", "Institute for Research on Biological Resources Alexander von Humboldt, Colombia", 
+  "Contractor", "2007-2010", "National Natural Parks System, Colombia",
 ) %>% 
   detailed_entries(Role, When, Institution)
 ```
+
+# Other Service
+```{r}
+library(tibble)
+tribble(
+  ~ Role, ~ When, ~ Institution,  
+  "INSNA Membership Engagement Committee", "2024 - Ongoing", "Committee Member",
+  "Early and Middle Career Researchers in Social Network Analysis", "2022-2024", "Council Member", 
+  "The PhD Journey", "2024", "Panel Member",
+  "Tips and Tricks for your PhD", "2023", "Panel Moderator",
+  "Colectivo Riberear, Mexico", "2020-ongoing", "Coordination Group Member", 
+  "Faculty of Environmental and Rural Studies, Universidad Javeriana, Colombia","2019-2020", "Steering Committee Member",
+) %>% 
+  detailed_entries(Role, When, Institution)
+```
+

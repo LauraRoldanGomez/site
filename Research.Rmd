@@ -9,17 +9,36 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Working papers
 <hr>
-Why do armed conflicts last so long? The effect of relational mechanisms on the duration of the Colombian armed conflict 
+- Social-Ecological networks and risk: how is perceived and ecological risk associated with network structure? (First author with Lorien Jasny, Angela Guerrero, Michele Barnes, Steven Alexander
 
+- How do armed conflicts evolve? Relational Event Models in the Context of War (Single author)
+
+- The Use of Network Analysis in Understanding Environmental Outcomes: A Systematic Literature Review (Second author with Antony Emenyu and Lorien Jasny)
+
+- Scoping Review of the Integration of Network and Spatial Concepts and Methods in Investigating Socio-Ecological Systems (Single author)
+
+- Effect of Armed Conflict on Forest Cover in Colombia from 2000 to 2006: A Difference in Difference Analysis (Single author)
+
+<br><br>
 
 ## Publications
 <hr>
+
+**Journals**
+<hr>
+
 L. Jasny, C. Prell, E. Schiffer, L. Roldan, M. Barnes, P. Matous, M. Hamilton, D. Jacobs, J. Sayles, A. Guerrero. Participant Engagement in Environmentally Focused Social Network Data Collection. Social Networks, 2021
 
 [Link](https://doi.org/10.1016/j.socnet.2021.01.005)
 
 <br>
 
+**Book Chapters**
+F.S. Sosa Rodriguez, F. Pineda Campos, A. Flores Diaz, L. Roldan, E. Rios Patron. (2023). Estrategias para la integración de sujetos y actores sociales en la restauración del ciclo socionatural del agua. En: J.R. Garcia Barrios, S. Mozka Estrada (Eds). Problemas del agua en México. ¿Cómo abordarlos? (pp. 339-361).
+
+[Link](https://secihti.mx/wp-content/uploads/publicaciones_conacyt/libros/Problemas_del_agua.pdf)
+
 Ungar, P., Osejo, A., Roldán, L., Buitrago, E. (2014). Caracterización del sistema social asociado al territorio. En: Sarmiento, C. y P. Ungar (Eds). Aportes a la delimitación del páramo mediante la identificación de los límites inferiores del ecosistema (pp. 54-68)., 2014
 
 [Link](http://repository.humboldt.org.co/handle/20.500.11761/32539)
+

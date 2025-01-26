@@ -1,0 +1,16 @@
+---
+title: "Class Notes"
+author: "LRG"
+date: "2025-01-26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Ontology and Epistemology
+
+<a href = "class_notes/ontology_epistemology.html">
+<button role="button">Notes</button>
+</a>

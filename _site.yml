@@ -8,6 +8,9 @@ navbar:
     - text: "Research"
       icon: fa-solid fa-paper-plane
       href: Research.html 
+    - text: "Class Notes"
+      icon: fa-solid fa-book-open
+      href: classnotes.html
     - text: "R-Training"
       icon: fa-solid fa-robot
       href: rtraining.html  
