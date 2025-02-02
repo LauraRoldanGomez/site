@@ -1,6 +1,6 @@
 ---
 title: "Class Notes"
-author: "LRG"
+author: ""
 date: "2025-01-26"
 output: html_document
 ---
@@ -9,8 +9,18 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Ontology and Epistemology
+<br><br>
+
+## Week 2: Ontology and Epistemology
 
 <a href = "class_notes/ontology_epistemology.html">
+<button role="button">Notes</button>
+</a>
+
+<br><br>
+
+## Week 3: Theories and Building the Text
+
+<a href = "class_notes/Put_it_together.html">
 <button role="button">Notes</button>
 </a>

@@ -1,0 +1,101 @@
+---
+title: "My Class Notes: Theories and Building your text"
+output: 
+  html_document:
+    highlight: tango
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+    number_sections: true
+    theme: readable
+---
+<br><br>
+
+# Today's Tasks:
+
+- Which grand theory speaks to you most?
+
+- How about a mid-level or specific theory?
+
+- What kinds of theoretical frameworks have you come across in your studies so far?
+
+- Which research questions (RQs) can be answered using these theories?
+
+One more...
+
+----
+
+----
+
+# Building the outline:
+
+This example, based on my research, demonstrates how you can begin structuring the skeleton of your text and organising your ideas for your own projects. It is a good exercise that will help you develop your research proposal. 
+
+Try it yourself, and don’t get stuck on selecting the perfect theory—research is an evolving process, and you can refine your approach as you progress.
+
+```{r, echo=FALSE, fig.align='center', out.width="80%"}
+library(knitr)
+include_graphics("/Users/roldix/Library/Mobile Documents/com~apple~CloudDocs/TA/2025_research_Design/Week3/outline.png"
+)
+```
+
+<br><br>
+
+```{r, echo=FALSE, fig.align='center', out.width="80%"}
+library(knitr)
+include_graphics(c(
+  "/Users/roldix/Library/Mobile Documents/com~apple~CloudDocs/TA/2025_research_Design/Week3/example_text_1.png",
+  "/Users/roldix/Library/Mobile Documents/com~apple~CloudDocs/TA/2025_research_Design/Week3/example_text_2.png"
+))
+```
+
+<br><br>
+
+# For those without a topic
+
+This is a list of topics that you could choose to do research on. Maybe it helps?
+
+## Politics
+
+1️⃣ Political Institutions & Governance: Studies the structure, function, and effectiveness of governments, electoral systems, and political accountability mechanisms.
+
+2️⃣ Democracy & Authoritarianism: Examines democratic development, challenges to democracy, the rise of authoritarianism, and hybrid political systems.
+
+3️⃣ International Relations & Global Politics: Focuses on diplomacy, global governance, international organisations, foreign policy, and power dynamics among states.
+
+4️⃣ Political Ideologies & Movements: Explores the evolution and impact of political ideologies (e.g., liberalism, socialism, conservatism) and social movements (e.g., feminism, nationalism).
+
+5️⃣ Public Policy & Administration: Analyses how policies are formulated, implemented, and evaluated in areas such as health, education, welfare, and environmental governance.
+
+6️⃣ Conflict, Security & Peace Studies: Investigates causes of war, peace-building efforts, security threats (terrorism, cyberwarfare), and the role of military interventions.
+
+7️⃣ Comparative Politics: Compares political systems, institutions, and governance models across different countries to identify patterns and differences.
+
+8️⃣ Political Economy: Studies the relationship between politics and economics, including global trade, economic inequality, and the role of the state in markets.
+
+9️⃣ Human Rights & Political Justice: Examines the protection of human rights, international law, transitional justice, and responses to political oppression.
+
+🔟 Environmental Politics & Climate Policy: Analyses the role of governments and international institutions in addressing climate change, sustainability, and environmental justice.
+
+## IR
+
+1️⃣ Theories of International Relations: Examines foundational and evolving theories such as Realism, Liberalism, Constructivism, and Critical Theories to understand state behavior and global interactions.
+
+2️⃣ Global Governance & International Organisations: Investigates the role and effectiveness of international institutions (e.g., UN, NATO, WTO) and regional organizations (e.g., EU, ASEAN, AU) in maintaining global order.
+
+3️⃣ Foreign Policy & Diplomacy: Analises how states formulate and implement foreign policies, engage in diplomacy, and respond to global challenges through strategic decision-making.
+
+4️⃣ Security & Conflict Studies: Explores issues of war, peace, military strategies, cyber warfare, counterterrorism, and the role of nuclear deterrence in international security.
+
+5️⃣ International Political Economy (IPE): Studies the intersection of politics and economics, including trade policies, global financial institutions, economic development, and the impact of globalization.
+
+6️⃣ Human Rights & International Law: Examines how international legal frameworks protect human rights, address war crimes, and regulate state and non-state actors in global governance.
+
+7️⃣ Environmental Politics & Climate Diplomacy: Investigates international efforts to combat climate change, the role of global agreements (e.g., Paris Agreement), and environmental security issues.
+
+8️⃣ Geopolitics & Strategic Studies: Focuses on power struggles between global and regional powers, shifting alliances, and the impact of geography on international conflicts and cooperation.
+
+9️⃣ Technology & International Relations: Analszes how emerging technologies (AI, cyber warfare, surveillance) influence diplomacy, security, and international competition.
+
+🔟 Migration & Refugee Politics: Studies the political and humanitarian challenges of forced displacement, asylum policies, and international cooperation in managing migration crises.
