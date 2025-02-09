@@ -1,0 +1,222 @@
+---
+title: "My Class Notes: Literature Review"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    number_sections: true
+    theme: default
+---
+
+# Today's Tasks  
+
+- How have these studies conducted a literature review?  
+- What are the essential elements of a literature review, are any of them missing or underdeveloped?  
+- What limitations are imposed on their literature reviews?  
+
+---
+
+# Female Political Representation and Substantive Effects on Policies  
+
+## How Have These Studies Conducted a Literature Review?  
+
+The literature review in this paper is structured in a comprehensive and thematic approach, summarizing past research and linking it to the study's focus.  
+
+- **Introduction as Contextual Framing:**  
+  The paper introduces the importance of female political representation and its potential effects on policies, setting the stage for the literature review.  
+
+- **Organized Thematically:**  
+  The review is structured around key themes, such as:  
+  - Obstacles to women’s political representation  
+  - Gender differences in policy preferences  
+  - Effects of female political leadership on policy choices  
+  - Institutional impact of female politicians  
+
+- **Use of Empirical Evidence:**  
+  The review integrates studies using observational data, quasi-experimental approaches, and case studies.  
+
+- **Comparisons Between Contexts:**  
+  It contrasts findings from developing and developed countries to assess variations in female political representation.  
+
+---
+
+## Essential Elements of a Literature Review: Are Any Missing?  
+
+| **Essential Element** | **Present?** | **Comments** |
+|----------------------|------------|-------------|
+| Clear Research Scope | ✅ | Well-defined focus on female political representation. |
+| Thematic Organization | ✅ | Structured around barriers, policy impact, institutional effects. |
+| Engagement with Key Theories | ✅ | Discusses median voter theory, identity politics, and policy divergence models. |
+| Use of Empirical Evidence | ✅ | Cites observational & experimental studies. |
+| Comparison Across Contexts | ✅ | Contrasts findings from different countries. |
+| Critical Analysis of Studies | ⚠️ Somewhat Limited | Summarizes past studies well but lacks a deeper critique. |
+| Identification of Gaps | ⚠️ Moderate | Identifies areas needing research, but not explicitly discussed early in the review. |
+
+---
+
+## Limitations of Their Literature Review  
+
+While the literature review is extensive, it has some limitations:
+
+- **Limited Geographic Scope**
+
+  - Heavy reliance on studies from the US, Europe, and India, leaving out Latin America, Africa, and East Asia.  
+  - Might not fully capture regional variations in female political representation.  
+
+- **Dependence on Existing Empirical Evidence** 
+
+  - Many studies use observational and quasi-experimental data, making it difficult to establish causality.  
+  - Lacks discussion on long-term policy effects of female representation.  
+
+- **Lack of Methodological Critique**  
+
+  - The review summarizes findings well but does not critique biases in the cited studies.  
+  - Some studies rely on correlation-based observational data, which may not prove causation.  
+
+- **Underdeveloped Discussion on Intersectionality**  
+
+  - The review focuses only on gender but does not address how race, class, or identity factors intersect with political representation.  
+  - No mention of women of color, Indigenous politicians, or LGBTQ+ representation.  
+
+---
+
+# Nurses in Political Action  
+
+##  How Have These Studies Conducted a Literature Review? 
+
+The paper follows a scoping literature review methodology, which is:  
+
+- **Historical & Thematic:** 
+The review is structured across decades to identify patterns in research findings.  
+
+- **Database-Driven:** 
+Articles were retrieved from the CINAHL database, focusing on nursing, politics, and public policy.  
+
+- **Wide Inclusion Criteria:** 
+Both research-based and non-research articles were reviewed, allowing theoretical perspectives and empirical studies to be compared. 
+
+- **Chronological Comparison:**
+The literature is analyzed decade-by-decade to track trends in nurses' involvement in political action.  
+
+The review highlights: 
+
+- How nurses have been historically seen as apolitical.  
+- A gradual increase in political participation and awareness among nurses.  
+- Differences between developed and developing countries in nursing political engagement.
+
+---
+
+##  Essential Elements of a Literature Review: Are Any Missing?  
+
+| **Essential Element** | **Present?** | **Comments** |
+|----------------------|------------|-------------|
+| Clear Research Scope | ✅ | Defined focus on nurses' political involvement. |
+| Thematic Organization | ✅ | Uses a decade-by-decade structure. |
+| Engagement with Key Theories | ⚠️ Limited | Discusses political engagement in nursing, but lacks theoretical depth. |
+| Use of Empirical Evidence | ✅ | Cites observational & historical studies. |
+| Comparison Across Contexts | ⚠️ Moderate | Mostly focuses on US & Canada, with limited discussion on other regions. |
+| Critical Analysis of Studies | ⚠️ Somewhat Limited | Summarizes past studies but lacks deeper methodological critique. |
+| Identification of Gaps | ⚠️ Moderate | Identifies gaps but could be more explicit early in the review. |
+
+---
+
+##  Limitations of Their Literature Review  
+
+While the literature review is systematic, some limitations exist:
+
+- **Limited Geographic Scope**  
+  - Focuses heavily on US & Canada.  
+  - Minimal inclusion of research from developing countries.  
+
+- **Dependence on a Single Database**  
+  - The CINAHL database was the primary source.  
+  - Other relevant policy and political science databases were not used, potentially missing key research.  
+
+- **Limited Methodological Critique**  
+  - The review summarizes studies without critiquing sample sizes, biases, or validity of methods.  
+  - Does not compare qualitative vs. quantitative approaches.  
+
+- **Underdeveloped Discussion on Political Theory**  
+The review lacks references to political science theories such as:  
+  - Advocacy Coalition Framework (ACF)  
+  - Institutional Theory  
+  - Policy Window Model  
+  
+---
+
+# Extra Content: How to...
+
+## Reference databases
+
+Go to [Link](https://libguides.exeter.ac.uk/az/databases) and choose a specific database for your topic.
+
+```{r, echo=FALSE, fig.align='center', out.width="80%"}
+library(knitr)
+include_graphics(
+  "/Users/roldix/Library/Mobile Documents/com~apple~CloudDocs/TA/2025_research_Design/Week4/images/AZ.png"
+)
+```
+
+<br><br>
+
+**OR** go to [SCOPUS]("https://www-scopus-com.uoelibrary.idm.oclc.org/search/form.uri?display=basic&zone=header&origin=#basic") and do an Advanced Search
+
+```{r, echo=FALSE, fig.align='center', out.width="80%"}
+library(knitr)
+include_graphics(
+  "/Users/roldix/Library/Mobile Documents/com~apple~CloudDocs/TA/2025_research_Design/Week4/images/scopus.png"
+)
+```
+
+<br><br>
+
+- Search for the key concepts of your topic.
+- Use "" so that it searches for the specific terms.
+- Add a time frame.
+
+```{r, echo=FALSE, fig.align='center', out.width="80%"}
+library(knitr)
+include_graphics(
+  "/Users/roldix/Library/Mobile Documents/com~apple~CloudDocs/TA/2025_research_Design/Week4/images/search.png"
+)
+```
+
+<br><br>
+
+In this simple example I found 4 papers because I searched for very specific terms ("Social Network Analysis" and "Environmental Outcomes"). If I want more papers, I should relax the search, for example adding synonyms for Outcomes (i.e. impact). It can become more nuanced if you are performing a systematic lit review, and then you would use truncation symbols and wild cards... but for now, this is all you may need.
+
+To find the most important papers, you can order the results by "citations".
+
+```{r, echo=FALSE, fig.align='center', out.width="80%"}
+library(knitr)
+include_graphics(
+  "/Users/roldix/Library/Mobile Documents/com~apple~CloudDocs/TA/2025_research_Design/Week4/images/citations.png"
+)
+```
+
+<br><br>
+
+## Reference Manager
+
+If you haven't done so, I strongly suggest you start using a reference manager such as [Zotero]("https://www.zotero.org/") or [Mendeley]("https://www.mendeley.com/"). 
+
+These are free and you can connect them to Chrome to include your references automatically
+
+```{r, echo=FALSE, fig.align='center', out.width="80%"}
+library(knitr)
+include_graphics(
+  "/Users/roldix/Library/Mobile Documents/com~apple~CloudDocs/TA/2025_research_Design/Week4/images/zotero.png"
+)
+```
+
+
+And you can also add a plugin to Word so that you can also add the citations to your document automatically.
+
+Check out this video
+[🎥 Referencing in Microsoft Word with Mendeley Reference Manager]("https://www.youtube.com/watch?v=kTUGWGECZgM&ab_channel=SmartStudent)
+
+
+
+
