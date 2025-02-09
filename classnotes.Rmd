@@ -24,3 +24,11 @@ knitr::opts_chunk$set(echo = TRUE)
 <a href = "class_notes/Put_it_together.html">
 <button role="button">Notes</button>
 </a>
+
+<br><br>
+
+## Week 4: Literature Review
+
+<a href = "class_notes/lit_rev.html">
+<button role="button">Notes</button>
+</a>
