@@ -19,15 +19,15 @@ output: html_document
 
 ## **Laura Roldan-Gomez**
 
-PhD Candidate
+PhD Candidate in Advanced Quantitative Methods
 
-Q-Step Centre, University of Exeter
+Q-Step Centre for Computational Social Science (C2S2), University of Exeter
 
 <br>
 
 Hello and welcome to my academic website! 
 
-My name is Laura and I am a third year PhD student at the University of Exeter's [Q-Step Centre](http://socialsciences.exeter.ac.uk/q-step/). My current research focuses on the relationship between armed conflict in Colombia and deforestation, using innovative network analysis methods.
+My name is Laura, and I am PhD Candidate in Advanced Quantitative Methods at the University of Exeter's [Q-Step Centre for Computational Social Science](https://www.exeter.ac.uk/research/centres/computational-social-science/). My current research focuses on the relationship between armed conflict in Colombia and deforestation, using innovative network analysis methods.
 
 I am passionate about studying social-ecological systems and using network analysis to understand complex relationships between nature, individuals, groups, and institutions. Through my research, I hope to contribute to a greater understanding of the ways in which human actions and societal structures interact with and impact the natural world.
 
