@@ -1,0 +1,173 @@
+---
+title: "Data Types and Structures"
+Author: "Laura Roldan-Gomez"
+format:
+  revealjs: 
+    theme: dark
+    incremental: true
+editor: visual
+---
+
+## Welcome
+
+-   Welcome both in person and remote learners- encourage virtual participants to turn their cameras on. Make sure attendees are aware of the two "venues".
+
+-   Introduce yourself and helpers 
+
+-   Give some background to the programme
+
+-   Share some precourse data to create a sense of "I belong here" across learners
+
+-   Set the expectations. Use this as opportunity to highlight if these are new materials, or this is your first time running this course. The learners are likely to be much more empathetic if things don't go right if you let them know in advance.
+
+-   Acknowledge any sources for the materials
+
+-   Highlight how learners should ask for help for both in person and remote
+
+# Code of conduct
+
+Executive Summary: Be kind by default.
+
+The rest of the rules of engagement are available on course website
+
+# Today
+
+-   Method of delivery
+
+-   Please sign in/register your attendance, via an online sheet (link)
+
+-   Breaks every 60-90 minutes
+
+# Our plan for this session
+
+# 1. Set Working Directory
+
+setwd()
+
+# 2. Data Types - *The basis of it all*
+
+*Data types* define how the values are stored in the computer. There are 3 core data types:
+
+-   Numeric
+-   Character or strings
+-   Logical
+
+## 2.1. Numeric
+
+-   integers
+
+```{r echo=T}
+3 # This is a number
+```
+
+```{r echo=T}
+class(3) # you can check. The function class() and typeof() returns the datatype of an object
+```
+
+```{r echo=T}
+typeof(3) # another way of checking (double and numeric are the same thing)
+```
+
+```{r echo=T}
+15.5 # This is also a number
+class(15.5)
+```
+
+-   complex:
+
+```{r echo=T}
+1+4i # This is also a number
+class(1+4i)
+```
+
+## 2.2. Characters or strings:
+
+consists of letters, words, sentences or characters, such as:
+
+```{r echo=T}
+"a" # note the quote marks
+"datatypes"
+"Learning R is fun"
+"@%£$"
+
+class("a") # Check
+```
+
+#
+Basically, anything within "" is a character or string, so... numbers can also be characters!
+
+```{r echo=T}
+3 # This is a number
+2 # This is also a number
+```
+
+```{r echo=T}
+3-2 # I can treat them as numbers
+```
+
+# 
+
+NOW...
+
+```{r echo=T}
+"3" # This is not a number
+"2" # This is not a number
+```
+
+```{r, echo=T, eval=FALSE}
+"3"-"2" # I cannot treat them as numbers
+```
+
+## 2.3. Logical:
+
+Logical values can either be TRUE or FALSE or sometimes 1 and 0.
+
+That means that if you type:
+
+```{r echo=T}
+z = as.logical(c(1,0,0,1))
+typeof(z)
+```
+
+```{r echo=T}
+z = (c(1,0,0,1)) # if you don't use as.logical you get a set of numbers
+typeof(z)
+```
+
+# 3. Data Structures
+
+When we group the different data types, they get into a structure. The different structures are:
+
+-   vectors:
+    -   atomic vector
+    -   list
+-   matrix
+-   data frame
+-   factors
+
+## 3.1. Vectors
+
+A vector is the most common and basic data structure in R. Technically, vectors can be one of two types:
+
+### a. atomic vectors:
+
+only holds elements (or atoms) of a single data type and each atom is a scalar, which means it "has length one". It is *homogenous*.
+
+Examples:
+
+```{r echo=T}
+x <- 3 # a vector of one number
+```
+
+```{r echo=T}
+y <- 1:5 # numbers from 1 to 5
+```
+
+```{r echo=T}
+y_times_two <- (y*2) # vector b multiplied by two
+```
+
+```{r echo=T}
+z <- letters[1:5] # the first 5 letters of the alphabet
+```
+
