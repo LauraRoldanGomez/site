@@ -1,0 +1,81 @@
+---
+title: "My Class Notes: Case Studies and Essay Checklist"
+output: 
+  html_document:
+    highlight: default
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+    number_sections: true
+    theme: readable
+---
+
+# Today's tasks
+<br><br>
+
+```{r, echo=FALSE, fig.align='center', out.width="80%"}
+library(knitr)
+include_graphics("/Users/roldix/Library/Mobile Documents/com~apple~CloudDocs/TA/2025_research_Design/Week5/paper.png"
+)
+```
+
+
+This paper explores the QAnon conspiracy theory and the characteristics of its supporters, challenging popular claims that it is predominantly far-right or rapidly expanding. Analysing six public opinion polls from 2018 to 2020, the authors found QAnon support to be minimal and stable over time, with extremism rather than specific ideological alignment (right or left) predicting support. Crucially, QAnon support was strongly linked to conspiratorial worldviews, antisocial personality traits (“dark triad”), and non-normative attitudes, rather than coherent political ideologies or partisanship. The paper suggests redefining political extremism beyond traditional left-right dimensions.
+<br><br>
+
+## Questions: 
+<br><br>
+
+### How have these papers used a case study design?
+
+The authors employ a case study approach by focusing specifically on the QAnon movement as a distinct instance of political extremism. This allows detailed exploration of the attributes, beliefs, and social factors that characterize QAnon supporters, demonstrating broader implications for studying conspiracy theories and misinformation.
+<br><br>
+
+### Were there any other ways their research questions could have been answered?
+
+Yes, alternative methodologies could have included qualitative approaches like interviews or ethnographic studies of QAnon communities, analyses of social media content or behavioural tracking online. These methods might offer richer insights into individual motivations and behaviours.
+<br><br>
+
+### What kind of research choices did they make?
+
+The authors chose quantitative survey methods to assess public opinion, using representative samples and statistical analyses. They focused on measuring general sentiment towards QAnon using feeling thermometer scales and correlating this support with psychological and political variables.
+<br><br>
+
+### What about their case selection?
+
+The selection of QAnon was appropriate due to its perceived significance in political discourse, claims about its influence, and its association with political violence. However, the case is specific to a U.S. context, which may limit broader generalisability internationally. The choice allowed examination of how conspiracy beliefs intersect with personality traits and political extremism.
+
+----
+<br><br>
+
+# Essay checklist
+
+	1.	Clear Thesis Statement
+	•	Defines the purpose, argument, and scope of the essay clearly.
+	
+	2.	Logical Structure
+	•	Clear introduction, body paragraphs with topic sentences, and conclusion.
+	
+	3.	Strong Introduction
+	•	Engages readers, provides context, and states the thesis clearly.
+	
+	4.	Focused Paragraphs
+	•	Each paragraph has a single idea with clear topic sentences and relevant evidence.
+	
+	5.	Evidence and Analysis
+	•	Uses credible sources, properly cited, and provides meaningful analysis or interpretation.
+	
+	6.	Critical Engagement
+	•	Demonstrates critical thinking by evaluating different perspectives and arguments.
+	
+	7.	Conclusion
+	•	Summarises key points, restates the thesis effectively, and reflects broader implications.
+	
+	8.	Cohesion and Coherence
+	•	Ideas flow logically with effective use of transitions.
+	
+	9.	Grammar and Style
+	•	Correct grammar, spelling, punctuation, and academic tone.
+	
+	10.	Referencing
