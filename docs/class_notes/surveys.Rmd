@@ -1,0 +1,48 @@
+---
+title: "Surveys"
+author: ""
+date: "`r Sys.Date()`"
+output: html_document
+---
+<br><br>
+
+Even if you are not going down the researcher path, you still have to be able to identify if a survey has good or bad questions. As a citizen or as someone working in industry or the government, you will come across surveys, they are everywhere!
+
+Bad surveys will impact not only research but data driven decisions. So, be on the lookout for the following characteristics: 
+
+
+- **Leading Question** 
+
+A question that subtly guides respondents toward a particular answer by implying a preferred response.
+
+- **Double-Barreled Question** 
+
+A question that asks about two or more different issues at the same time, making it unclear what the respondent is answering.
+
+- **Vague or Ambiguous Question** 
+
+A question that lacks clarity or specificity, making it difficult for respondents to provide an accurate answer. 
+
+- **Loaded Question** 
+
+A question that presumes something controversial or assumes guilt, making it hard for the respondent to answer without agreeing to the assumption. 
+
+- **Biased Question** 
+
+A question that presents information in a way that favours one perspective over another. 
+
+- **Too Long** 
+
+A question that is unnecessarily complex, making it difficult for respondents to understand or stay engaged.
+
+- **Incomplete Answers** 
+
+A question that does not provide all possible response options, leading to inaccurate or misleading results. 
+
+<br><br>
+
+# Today's tasks:
+
+1. Answer this questions to test your level of skill in recognising good and bad questions [Quiz](https://www.surveymonkey.com/r/6SM2FNG)
+
+2. Build your own survey using platforms such as google forms or surveymonkey.
