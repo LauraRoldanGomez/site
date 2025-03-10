@@ -1,0 +1,137 @@
+---
+title: "Research Proposal ✍️"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    number_sections: true
+    theme: default
+---
+<br><br>
+
+**Today:** 
+Work on choosing the topic and refining the question 
+
+<br><br>
+
+# Choose a Topic 💡
+
+**Exercise:** If you don't have a topic yet, you can go to [My notes for Week 3](https://lauraroldangomez.github.io/site/class_notes/Put_it_together.html#31_Politics) and choose a topic from the list. Of course, you can choose topics that are not on that list, these are just suggestions. 
+
+<br><br>
+
+----
+
+# Narrow Down the Topic and Draft Your Question 📝 
+
+**Exercise:** Answer 5 times the question "What" 🔄  
+
+  1. **What** is my topic:  Conflict  
+  2. **What** about Conflict: Civil Conflict  
+  3. **What** about Civil Conflict:  Duration of Civil Conflict  
+  4. **What** about the Duration of Civil Conflict: Long-lasting civil conflicts  
+  5. **What** about Long-lasting civil conflicts: What are the factors that increase the duration of civil conflicts❓
+
+📌 **Templates:**  
+
+Use these question structures to refine your research inquiry:
+
+	•	“What is the relationship between ___ and ___?”
+	•	“To what extent does ___ affect ___?”
+	•	“How has ___ changed over time?”
+	
+<br><br>
+
+# Define the Boundaries of the Topic 🔍
+
+**Exercise:** “5Ws and H” Approach: What, When, Where, Why, How, and Who  
+
+Ask yourself questions to refine your focus. Some may be practical, like **"Where do I get data from?"** Try answering the ones you can! ✅  
+
+**❓ What**
+- What are Civil Conflicts?
+- What are long-lasting Civil Conflicts?
+- What are the factors that fuel civil conflicts?
+
+### **⏳ When**  
+- When did these conflicts happen?  
+- What is my timeframe? *I will concentrate on Civil Conflicts after World War II*  
+
+### **🤔 Why**  
+- Why do some conflicts last longer than others?  
+- Why is it important to know this?  
+
+### **🌍 Where**  
+- Where are these civil conflicts taking place?  
+- Where am I going to focus my study? *South America*  
+- Where do I find the data?  
+
+### **📊 How**  
+- How do I want to analyse this? **Qualitatively or Quantitatively?**  
+- How do long-lasting conflicts affect countries?  
+
+### **👥 Who**  
+- Who are the actors involved in long-lasting conflicts?  
+- Who knows about civil conflicts?  
+
+<br><br>
+
+----
+
+# Refine Your Question 📌 
+
+**What are the factors that affect the duration of civil conflicts after WWII in South America?**  
+
+<br><br>
+
+----
+
+# Alternative Approach  🔄
+
+Need a different approach? Try the **PICO framework** (often used in social sciences and health research, but adaptable for politics).  
+
+	•	**P**opulation  
+	•	**I**ntervention  
+	•	**C**omparison  
+	•	**O**utcome  
+
+📌 **Example:**  
+
+- **P**opulation: UK voters  
+- **I**ntervention: Brexit campaign  
+- **C**omparison: No Brexit campaign  
+- **O**utcome: Change in public opinion  
+
+<br><br>
+
+----
+
+# The “So What?” Test  🤔  
+
+This exercise helps **justify the importance** of your topic!  
+
+**Activity:** State your research question, then ask, **“So what?”** until you clarify its significance.  
+
+📌 **Example:**  
+
+🔹 **Question:** “What are the factors that increase the duration of civil conflicts?”  
+	- **So what?** “Long-lasting conflicts have devastating consequences”  
+	- **So what?** “By knowing the factors that fuel conflicts, we can change policies of de-escalation and peace-building”  
+
+<br><br>
+
+----
+
+# Twist and Turn: Reframe Your Question 🌀 
+
+Frame your draft question in different ways.
+
+**Example:**  
+
+**What are the factors that increase the duration of civil conflicts?**  
+
+	•	“What is the relationship between the duration of civil conflicts and the environment?”  
+	•	“To what extent does a long-lasting civil conflict affect the environment?”  
+	•	“How has the duration of conflicts changed over time?”  
