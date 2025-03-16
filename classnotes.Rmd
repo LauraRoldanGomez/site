@@ -11,14 +11,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <br><br>
 
-## Week 2: Ontology and Epistemology
-
-<a href = "class_notes/ontology_epistemology.html">
-<button role="button">Notes</button>
-</a>
-
-<br><br>
-
 ## Week 3: Theories and Building the Text
 
 <a href = "class_notes/Put_it_together.html">
@@ -35,14 +27,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <br><br>
 
-## Week 6: Case studies and Essay checklist
-
-<a href = "class_notes/case_essay.html">
-<button role="button">Notes</button>
-</a>
-
-<br><br>
-
 ## Week 7: Surveys
 
 <a href = "class_notes/surveys.html">
@@ -54,5 +38,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Week 8: Research Proposal
 
 <a href = "class_notes/rq.html">
+<button role="button">Notes</button>
+</a>
+
+## Week 9: Research Proposal 2
+
+<a href = "class_notes/lit_rev.html">
 <button role="button">Notes</button>
 </a>
