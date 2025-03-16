@@ -1,0 +1,71 @@
+---
+title: "Research Proposal ✍️"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    number_sections: true
+    theme: default
+---
+
+-----------------------------
+
+
+# Today's tasks:
+
+Based on your question, get the main topics of your question and use a literature database and tools such as Elicit to get an initial grasp of your topic.
+<br><br>
+
+## Find 5 relevant sources
+
+Using the library's databases or tools like **Elicit** and start answering some of the questions from last week (How, Who, Where, Why, When).
+
+Some other questions to think about...
+
+- What research is there on your topic?
+- What are the main arguments?
+- What are the main counterarguments?
+- What methods do these papers use?
+- What data do they use?
+
+<br><br>
+
+## Set up your reference manager
+
+Try using either the word reference manager, Mendeley or Zotero. If you are already using a reference manager, keep going. 
+
+<br><br>
+
+## Work on the brief description
+
+You are more than ready to start working on your brief description.
+
+Think about:
+
+1. Context & Background – A short introduction to the topic, including key issues, historical developments, or recent trends.
+
+2.	Significance of the Topic – Explanation of why this topic is important in your field. This could include its academic relevance, policy implications, or real-world significance.
+	
+3.	Knowledge Gap – what does existing research lack or fail to address, highlighting why your study is necessary.
+	
+4.	Relevance to the Research Question – A connection between the topic background and the specific research question you will investigate.
+	
+-----------------------------
+<br><br>
+
+
+## Methodologies
+
+<br><br>
+
+| Method              | Description                                                   | Example                                          | Strengths                                       | Limitations                                      |
+|---------------------|---------------------------------------------------------------|--------------------------------------------------|------------------------------------------------|--------------------------------------------------|
+| Case Study Analysis | In-depth examination of a single case to understand broader political dynamics. | Studying the Cuban Missile Crisis to analyze deterrence theory. | Provides detailed contextual understanding. | Findings may not be generalizable. |
+| Process Tracing    | Tracing causal mechanisms between variables by analyzing sequences of events. | Analyzing how NATO’s intervention shaped the Kosovo conflict. | Helps establish causality in complex cases. | Requires detailed data that may not always be available. |
+| Discourse Analysis | Examining language, narratives, and meaning in political texts and speeches. | Analyzing UN speeches to study climate change rhetoric. | Uncovers hidden power structures in communication. | Interpretations can be subjective. |
+| Interviews         | Collecting qualitative data through structured, semi-structured, or unstructured conversations. | Interviewing policymakers on international trade agreements. | Provides direct insights from experts and participants. | Can be time-consuming and prone to bias. |
+| Ethnography        | Immersive fieldwork studying political actors and institutions in their natural settings. | Observing diplomatic negotiations at the UN. | Offers deep, first-hand understanding of political behavior. | Access to key actors may be limited. |
+| Archival Research  | Analyzing historical documents, official records, and government archives. | Using declassified CIA documents to study Cold War strategies. | Provides rich historical context. | Documents may be incomplete or classified. |
+| Comparative Analysis | Comparing multiple cases to identify patterns and differences. | Studying democratic transitions in Latin America vs. Eastern Europe. | Helps generate broader insights beyond a single case. | Requires careful case selection to avoid bias. |

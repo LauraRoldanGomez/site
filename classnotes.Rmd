@@ -43,6 +43,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Week 9: Research Proposal 2
 
-<a href = "class_notes/lit_rev.html">
+<a href = "class_notes/lit_review.html">
 <button role="button">Notes</button>
 </a>
