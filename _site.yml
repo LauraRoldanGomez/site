@@ -7,10 +7,7 @@ navbar:
       href: index.html
     - text: "Research"
       icon: fa-solid fa-paper-plane
-      href: Research.html 
-    - text: "Class Notes"
-      icon: fa-solid fa-book-open
-      href: classnotes.html
+      href: Research.html
     - text: "CV"
       icon: fa-solid fa-fingerprint
       href: CV.html

@@ -1,0 +1,63 @@
+---
+title: "Model Results"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(dplyr)
+library(DT)
+```
+
+## Introduction
+
+This page presents the results of my models. Collaborators can download the plots and tables below.
+
+## Example Model: Linear Regression on mtcars
+
+```{r model}
+# Run a simple linear model
+model <- lm(mpg ~ wt + cyl, data = mtcars)
+summary(model)
+```
+
+## Results Table
+
+```{r table}
+# Create a table of coefficients
+results_table <- summary(model)$coefficients
+results_df <- as.data.frame(results_table)
+results_df$Term <- rownames(results_df)
+results_df <- results_df[, c(5, 1:4)]
+names(results_df) <- c("Term", "Estimate", "Std. Error", "t value", "Pr(>|t|)")
+
+# Save table as CSV
+write.csv(results_df, "docs/model_results_table.csv", row.names = FALSE)
+
+# Display table
+datatable(results_df, extensions = 'Buttons', options = list(
+  dom = 'Bfrtip',
+  buttons = c('copy', 'csv', 'excel', 'pdf', 'print')
+))
+```
+
+[Download Results Table (CSV)](model_results_table.csv)
+
+## Plot
+
+```{r plot}
+# Create a plot
+p <- ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "MPG vs Weight by Cylinders", x = "Weight", y = "MPG")
+
+# Save plot
+ggsave("docs/model_plot.png", p, width = 8, height = 6)
+
+# Display plot
+p
+```
+
+[Download Plot (PNG)](model_plot.png)
