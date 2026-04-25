@@ -11,7 +11,7 @@
 
 
 
-<title>Contact.knit</title>
+<title>Model Results</title>
 
 <script src="site_libs/header-attrs-2.30/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -32,6 +32,23 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet" />
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.34.0/datatables.js"></script>
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="site_libs/jszip-1.13.6/jszip.min.js"></script>
+<script src="site_libs/pdfmake-1.13.6/pdfmake.js"></script>
+<script src="site_libs/pdfmake-1.13.6/vfs_fonts.js"></script>
+<link href="site_libs/dt-ext-buttons-1.13.6/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="site_libs/dt-ext-buttons-1.13.6/js/dataTables.buttons.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.13.6/js/buttons.html5.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.13.6/js/buttons.colVis.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.13.6/js/buttons.print.min.js"></script>
+<link href="site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
 <link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
 
@@ -284,39 +301,80 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">Model Results</h1>
 
 </div>
 
 
-<style type="text/css">
-.title {
-  display: none;
-}
-
-#getting-started img {
-  margin-left: 10px;
-}
-
-</style>
-<div class="row" style="padding-top: 100px;">
-<div class="col-sm-6">
-<p><strong>Laura Roldan-Gomez</strong></p>
-<p>email: <a href="mailto:lr480@exeter.ac.uk"
-class="email">lr480@exeter.ac.uk</a></p>
-<p>Pronouns: She/Her</p>
-<p>PhD in Advanced Quantitative Methods</p>
-<p>Centre for Computational Social Science](<a
-href="https://www.exeter.ac.uk/research/centres/computational-social-science/"
-class="uri">https://www.exeter.ac.uk/research/centres/computational-social-science/</a>)</p>
-<p>University of Exeter</p>
-<p>Clayden, Streatham Rise, Exeter EX4 4PE</p>
-<p>UK</p>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>This page presents the results of my models. Collaborators can
+download the plots and tables below.</p>
 </div>
-<div id="section" class="section level3 col-sm-6">
-<h3></h3>
-<iframe src="https://maps.google.com/maps?q=Clayden+Building+Streatham+Rise+Exeter+EX4+4PE&amp;output=embed" width="350" height="250" style="border:0;" allowfullscreen loading="lazy">
-</iframe>
+<div id="example-model-linear-regression-on-mtcars"
+class="section level2">
+<h2>Example Model: Linear Regression on mtcars</h2>
+<pre class="r"><code># Run a simple linear model
+model &lt;- lm(mpg ~ wt + cyl, data = mtcars)
+summary(model)</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = mpg ~ wt + cyl, data = mtcars)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -4.2893 -1.5512 -0.4684  1.5743  6.1004 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  39.6863     1.7150  23.141  &lt; 2e-16 ***
+## wt           -3.1910     0.7569  -4.216 0.000222 ***
+## cyl          -1.5078     0.4147  -3.636 0.001064 ** 
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 2.568 on 29 degrees of freedom
+## Multiple R-squared:  0.8302, Adjusted R-squared:  0.8185 
+## F-statistic: 70.91 on 2 and 29 DF,  p-value: 6.809e-12</code></pre>
 </div>
+<div id="results-table" class="section level2">
+<h2>Results Table</h2>
+<pre class="r"><code># Create a table of coefficients
+results_table &lt;- summary(model)$coefficients
+results_df &lt;- as.data.frame(results_table)
+results_df$Term &lt;- rownames(results_df)
+results_df &lt;- results_df[, c(5, 1:4)]
+names(results_df) &lt;- c(&quot;Term&quot;, &quot;Estimate&quot;, &quot;Std. Error&quot;, &quot;t value&quot;, &quot;Pr(&gt;|t|)&quot;)
+
+# Save table as CSV
+write.csv(results_df, &quot;docs/model_results_table.csv&quot;, row.names = FALSE)
+
+# Display table
+datatable(results_df, extensions = &#39;Buttons&#39;, options = list(
+  dom = &#39;Bfrtip&#39;,
+  buttons = c(&#39;copy&#39;, &#39;csv&#39;, &#39;excel&#39;, &#39;pdf&#39;, &#39;print&#39;)
+))</code></pre>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-63a3d1d0361da318f4ff" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-63a3d1d0361da318f4ff">{"x":{"filter":"none","vertical":false,"extensions":["Buttons"],"data":[["(Intercept)","wt","cyl"],["(Intercept)","wt","cyl"],[39.68626148025294,-3.190972138983744,-1.507794968259798],[1.714984011620953,0.7569064919503934,0.4146882882361136],[23.14089298286964,-4.215807597000867,-3.635971911995006],[3.043181563321343e-20,0.0002220200495162022,0.001064281784794932]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Term<\/th>\n      <th>Estimate<\/th>\n      <th>Std. Error<\/th>\n      <th>t value<\/th>\n      <th>Pr(&gt;|t|)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"columnDefs":[{"className":"dt-right","targets":[2,3,4,5]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Term","targets":1},{"name":"Estimate","targets":2},{"name":"Std. Error","targets":3},{"name":"t value","targets":4},{"name":"Pr(>|t|)","targets":5}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<p><a href="model_results_table.csv">Download Results Table
+(CSV)</a></p>
+</div>
+<div id="plot" class="section level2">
+<h2>Plot</h2>
+<pre class="r"><code># Create a plot
+p &lt;- ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
+  geom_point() +
+  geom_smooth(method = &quot;lm&quot;, se = FALSE) +
+  labs(title = &quot;MPG vs Weight by Cylinders&quot;, x = &quot;Weight&quot;, y = &quot;MPG&quot;)
+
+# Save plot
+ggsave(&quot;docs/model_plot.png&quot;, p, width = 8, height = 6)</code></pre>
+<pre><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
+<pre class="r"><code># Display plot
+p</code></pre>
+<pre><code>## `geom_smooth()` using formula = &#39;y ~ x&#39;</code></pre>
+<p><img src="Model_Results_files/figure-html/plot-1.png" width="672" /></p>
+<p><a href="model_plot.png">Download Plot (PNG)</a></p>
 </div>
 
 
