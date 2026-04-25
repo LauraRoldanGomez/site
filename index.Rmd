@@ -12,6 +12,12 @@ output: html_document
   margin-right: 10px;
 }
 
+.round-photo {
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
 </style>
 
 <div class="row" style="padding-top: 30px;">
@@ -19,9 +25,11 @@ output: html_document
 
 ## **Laura Roldan-Gomez**
 
-PhD Candidate in Advanced Quantitative Methods
+PhD in Advanced Quantitative Methods
 
-Centre for Computational Social Science (C2S2), University of Exeter
+[Centre for Computational Social Science (C2S2)](https://www.exeter.ac.uk/research/centres/computational-social-science/)
+
+University of Exeter
 
 <br>
 
@@ -48,7 +56,7 @@ Thank you for visiting!
 
 ### 
 
-![](images/photo_cairns.jpg){width=80%}
+![](images/photo_cairns.jpg){width=80% .round-photo}
 </a>
 </div>
 
